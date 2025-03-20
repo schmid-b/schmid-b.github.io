@@ -1,0 +1,1136 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="generator" content="quarto-1.6.42">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+    <title>Conventional vs.&nbsp;Video-Asssisted Larnygoscopy in Perioperative Endotracheal Intubations (COVALENT): a multi-center randomized, controlled trial</title>
+    <style>
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      div.columns{display: flex; gap: min(4vw, 1.5em);}
+      div.column{flex: auto; overflow-x: auto;}
+      div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+      ul.task-list{list-style: none;}
+      ul.task-list li input[type="checkbox"] {
+        width: 0.8em;
+        margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+        vertical-align: middle;
+      }
+      /* CSS for syntax highlighting */
+      pre > code.sourceCode { white-space: pre; position: relative; }
+      pre > code.sourceCode > span { line-height: 1.25; }
+      pre > code.sourceCode > span:empty { height: 1.2em; }
+      .sourceCode { overflow: visible; }
+      code.sourceCode > span { color: inherit; text-decoration: inherit; }
+      div.sourceCode { margin: 1em 0; }
+      pre.sourceCode { margin: 0; }
+      @media screen {
+      div.sourceCode { overflow: auto; }
+      }
+      @media print {
+      pre > code.sourceCode { white-space: pre-wrap; }
+      pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+      }
+      pre.numberSource code
+        { counter-reset: source-line 0; }
+      pre.numberSource code > span
+        { position: relative; left: -4em; counter-increment: source-line; }
+      pre.numberSource code > span > a:first-child::before
+        { content: counter(source-line);
+          position: relative; left: -1em; text-align: right; vertical-align: baseline;
+          border: none; display: inline-block;
+          -webkit-touch-callout: none; -webkit-user-select: none;
+          -khtml-user-select: none; -moz-user-select: none;
+          -ms-user-select: none; user-select: none;
+          padding: 0 4px; width: 4em;
+        }
+      pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+      div.sourceCode
+        {   }
+      @media screen {
+      pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+      }
+      /* CSS for citations */
+      div.csl-bib-body { }
+      div.csl-entry {
+        clear: both;
+      }
+      .hanging-indent div.csl-entry {
+        margin-left:2em;
+        text-indent:-2em;
+      }
+      div.csl-left-margin {
+        min-width:2em;
+        float:left;
+      }
+      div.csl-right-inline {
+        margin-left:2em;
+        padding-left:1em;
+      }
+      div.csl-indent {
+        margin-left: 2em;
+      }    </style>
+
+    <style>
+      body.hypothesis-enabled #quarto-embed-header {
+        padding-right: 36px;
+      }
+
+      #quarto-embed-header {
+        height: 3em;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: solid 1px;
+      }
+
+      #quarto-embed-header h6 {
+        font-size: 1.1em;
+        padding-top: 0.6em;
+        margin-left: 1em;
+        margin-right: 1em;
+        font-weight: 400;
+      }
+
+      #quarto-embed-header a.quarto-back-link,
+      #quarto-embed-header a.quarto-download-embed {
+        font-size: 0.8em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        margin-left: 1em;
+        margin-right: 1em;
+      }
+
+      .quarto-back-container {
+        padding-left: 0.5em;
+        display: flex;
+      }
+
+      .headroom {
+          will-change: transform;
+          transition: transform 200ms linear;
+      }
+
+      .headroom--pinned {
+          transform: translateY(0%);
+      }
+
+      .headroom--unpinned {
+          transform: translateY(-100%);
+      }      
+    </style>
+
+    <script>
+    window.document.addEventListener("DOMContentLoaded", function () {
+
+      var header = window.document.querySelector("#quarto-embed-header");
+      const titleBannerEl = window.document.querySelector("body > #title-block-header");
+      if (titleBannerEl) {
+        titleBannerEl.style.paddingTop = header.clientHeight + "px";
+      }
+      const contentEl = window.document.getElementById('quarto-content');
+      for (const child of contentEl.children) {
+        child.style.paddingTop = header.clientHeight + "px";
+        child.style.marginTop = "1em";
+      }
+
+      // Use the article root if the `back` call doesn't work. This isn't perfect
+      // but should typically work
+      window.quartoBackToArticle = () => {
+        var currentUrl = window.location.href;
+        window.history.back();
+        setTimeout(() => {
+            // if location was not changed in 100 ms, then there is no history back
+            if(currentUrl === window.location.href){              
+                // redirect to site root
+                window.location.href = "index.html";
+            }
+        }, 100);
+      }
+
+      const headroom = new window.Headroom(header, {
+        tolerance: 5,
+        onPin: function () {
+        },
+        onUnpin: function () {
+        },
+      });
+      headroom.init();
+    });
+    </script>
+
+    
+<script src="site_libs/manuscript-notebook/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-10daa034703793678e481cc8cee6d76f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
+     <script async="" src="https://hypothes.is/embed.js"></script>
+<script>
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    document.body.classList.add('hypothesis-enabled');
+  });
+</script>  <link href="site_libs/tabwid-1.1.3/tabwid.css" rel="stylesheet">
+<script src="site_libs/tabwid-1.1.3/tabwid.js"></script>  
+      <meta name="citation_title" content="Conventional vs. Video-Asssisted Larnygoscopy in Perioperative Endotracheal Intubations  (COVALENT): a multi-center randomized, controlled trial">
+<meta name="citation_author" content="Benedikt Schmid">
+<meta name="citation_author" content="Linda Grüßer">
+<meta name="citation_author" content="Maria Wittmann">
+<meta name="citation_author" content="Robert Werdehausen">
+<meta name="citation_author" content="Christopher Neuhaus">
+<meta name="citation_author" content="Peter Paal">
+<meta name="citation_author" content="Patrick Meybohm">
+<meta name="citation_author" content="Peter Kranke">
+<meta name="citation_author" content="Gregor Massoth">
+<meta name="citation_language" content="en">
+<meta name="citation_reference" content="citation_title=Conventional versus video-assisted laryngoscopy for perioperative endotracheal intubation (COVALENT) - a randomized, controlled multicenter trial;,citation_abstract=Data on the routine use of video-assisted laryngoscopy in peri-operative intubations are rather inconsistent and ambiguous, in part due to small populations and non-uniform outcome measures in past trials. Failed or prolonged intubation procedures are a reason for relevant morbidity and mortality. This study aims to determine whether video-assisted laryngoscopy (with both Macintosh-shaped and hyperangulated blades) is at least equal to the standard method of direct laryngoscopy with respect to the first-pass success rate. Furthermore, validated tools from the field of human factors will be applied to examine within-team communication and task load during this critical medical procedure. In this randomized, controlled, three-armed parallel group design, multi-centre trial, a total of more than 2500 adult patients scheduled for perioperative endotracheal intubation will be randomized. In equally large arms, video-assisted laryngoscopy with a Macintosh-shaped or a hyperangulated blade will be compared to the standard of care (direct laryngoscopy with Macintosh blade). In a pre-defined hierarchical analysis, we will test the primary outcome for non-inferiority first. If this goal should be met, the design and projected statistical power also allow for subsequent testing for superiority of one of the interventions. Various secondary outcomes will account for patient safety considerations as well as human factors interactions within the provider team and will allow for further exploratory data analysis and hypothesis generation. This randomized controlled trial will provide a solid base of data in a field where reliable evidence is of major clinical importance. With thousands of endotracheal intubations performed every day in operating rooms around the world, every bit of performance improvement translates into increased patient safety and comfort and may eventually prevent significant burden of disease. Therefore, we feel confident that a large trial has the potential to considerably benefit patients and anaesthetists alike. ClincalTrials.gov NCT05228288. 1.1, November 15, 2021.;,citation_author=Benedikt Schmid;,citation_author=Dominik Eckert;,citation_author=Andreas Meixner;,citation_author=Paul Pistner;,citation_author=Uwe Malzahn;,citation_author=Monika Berberich;,citation_author=Oliver Happel;,citation_author=Patrick Meybohm;,citation_author=Peter Kranke;,citation_publication_date=2023;,citation_cover_date=2023;,citation_year=2023;,citation_issue=1;,citation_doi=10.1186/s12871-023-02083-3;,citation_pmid=37072702;,citation_volume=23;,citation_journal_title=BMC Anesthesiology;">
+<meta name="citation_reference" content="citation_title=Validation of the Work Observation Method By Activity Timing (WOMBAT) method of conducting time-motion observations in critical care settings: an observational study;,citation_abstract=Electronic documentation handling may facilitate information flows in health care settings to support better coordination of care among Health Care Providers (HCPs), but evidence is limited. Methods that accurately depict changes to the workflows of HCPs are needed to assess whether the introduction of a Critical Care clinical Information System (CCIS) to two Intensive Care Units (ICUs) represents a positive step for patient care. To evaluate a previously described method of quantifying amounts of time spent and interruptions encountered by HCPs working in two ICUs. Observers used PDAs running the Work Observation Method By Activity Timing (WOMBAT) software to record the tasks performed by HCPs in advance of the introduction of a Critical Care clinical Information System (CCIS) to quantify amounts of time spent on tasks and interruptions encountered by HCPs in ICUs. We report the percentages of time spent on each task category, and the rates of interruptions observed for physicians, nurses, respiratory therapists, and unit clerks. Compared with previously published data from Australian hospital wards, interdisciplinary information sharing and communication in ICUs explain higher proportions of time spent on professional communication and documentation by nurses and physicians, as well as more frequent interruptions which are often followed by professional communication tasks. Critical care workloads include requirements for timely information sharing and communication and explain the differences we observed between the two datasets. The data presented here further validate the WOMBAT method, and support plans to compare workflows before and after the introduction of electronic documentation methods in ICUs.;,citation_author=Mark A Ballermann;,citation_author=Nicola T Shaw;,citation_author=Damon C Mayes;,citation_author=RT Noel Gibney;,citation_author=Johanna I Westbrook;,citation_publication_date=2011;,citation_cover_date=2011;,citation_year=2011;,citation_issue=1;,citation_doi=10.1186/1472-6947-11-32;,citation_pmid=21586166;,citation_volume=11;,citation_journal_title=BMC Medical Informatics and Decision Making;">
+<meta name="citation_reference" content="citation_title=R: A Language and Environment for Statistical Computing;,citation_author=R Core Team;,citation_publication_date=2024;,citation_cover_date=2024;,citation_year=2024;,citation_fulltext_html_url=https://www.R-project.org/;">
+<meta name="citation_reference" content="citation_title=Videolaryngoscopy versus direct laryngoscopy for adults undergoing tracheal intubation;,citation_abstract=Key messages Devices called laryngoscopes are used to help medical staff to insert a plastic breathing tube into someone’s windpipe because they need help with their breathing. A video camera can be attached to the device. We found that videolaryngoscopes generally improve the success of inserting a breathing tube compared with conventional laryngoscopes. What is intubation? People who are very ill or having surgery under general anaesthesia may need help to breathe. Trained medical staff may need to place a flexible plastic tube into a person’s windpipe. This is called intubation. It will keep the airway open so that the person can be given help to breathe. What are laryngoscopes? During intubation, the medical staff need to move the tongue and soft tissues of the mouth so that they can see the vocal cords before inserting the tube. To achieve this they use a laryngoscope. However, seeing the vocal cords may be difficult, for example when the person has restricted neck movement. Difficulties in intubation may lead to complications, including low oxygen levels and in extreme cases death. In this review, we looked at two types of laryngoscopes: Macintosh direct laryngoscopes and videolaryngoscopes. A Macintosh direct laryngoscope is a curved piece of metal or plastic with a handle designed to hold down the tongue and soft tissues. A videolaryngoscope uses video technology and allows medical staff to see the position of the tube on a video screen while it is being inserted. There are three main designs of videolaryngoscopes: Macintosh‐style (with a similar shape to the traditional laryngoscope), hyperangulated (more curved than other laryngoscopes), and channelled (with a groove to guide the breathing tube). What is laryngoscopy? Laryngoscopy is a medical procedure in which a device called a laryngoscope is used to examine the voice box and help with insertion of a breathing tube into the windpipe to protect the airways during anaesthesia or when patients have breathing difficulties. ’Direct laryngoscopes’ rely on a direct line of sight to the voice box to achieve this. A ’videolaryngoscope’ incorporates video technology that allows the voice box to be viewed on a screen during the procedure. What did we want to find out? We wanted to find out which type of laryngoscope works best for intubation for medical staff and patients. Which type of laryngoscope works best for certain groups of patients: for example, those with neck restrictions or obesity, different medical staff (experienced or less experienced) and in different settings (in or out of hospital). We also wanted to find out if any of the laryngoscopes cause unwanted effects. What did we do? We searched for studies that compared Macintosh laryngoscopes against each of the three different types of videolaryngoscopes. We compared and summarized their results, and rated our confidence in the evidence, based on factors such as study design, methods and numbers of participants. What did we find? We found 222 studies with 26,149 adults who were intubated using a laryngoscope. Most people were undergoing surgery and the intubation was planned or expected, but some intubations happened in emergency situations. Most studies included a mix of people. Some studies were in selected groups, such as people who were obese or when medical staff expected that intubation may be difficult. The studies were conducted in countries from around the world. Manufacturers of laryngoscopes were involved in 14 of the studies. Main results Compared to the traditional Macintosh laryngoscope, all three types of videolaryngoscope probably reduce the number of failed intubations. Hyperangulated videolaryngoscopes may lead to fewer failed intubations particularly in people with an airway that is difficult to intubate (or an expected difficult airway). All videolaryngoscopes may also increase the chances of being successfully intubated on the first attempt and improve the view of the vocal cords. Macintosh‐style and channelled videolaryngoscopes probably reduce the risk of the person experiencing a low oxygen level, but there may be little or no difference when a hyperangulated videolaryngoscope is used. Using a hyperangulated videolaryngoscope may reduce the risk of the breathing tube being accidentally inserted into the food pipe instead of the windpipe. The other videolaryngoscopes may or may not reduce this risk. No type of laryngoscope increased or reduced accidental damage to the teeth, but we are very uncertain about this finding. We were unable to tell if any of the laryngoscopes reduced the time taken for intubation. What are the limitations of the evidence? We were moderately confident that videolaryngoscopes reduce failed intubations. We had moderate to very low confidence in our other findings. It was not possible for researchers to conceal what type of laryngoscope the medical staff used and this might have affected how they carried out intubations. The studies included different types of people, and some findings included the possibility of benefits or harms for both types of laryngoscope. How up to date is this evidence? This review updates our previous review. The evidence is up‐to‐date to March 2021.;,citation_author=Jan Hansel;,citation_author=Andrew M Rogers;,citation_author=Sharon R Lewis;,citation_author=Tim M Cook;,citation_author=Andrew F Smith;,citation_publication_date=2022;,citation_cover_date=2022;,citation_year=2022;,citation_issue=4;,citation_doi=10.1002/14651858.cd011136.pub3;,citation_issn=1465-1858;,citation_pmid=35373840;,citation_volume=2022;,citation_journal_title=Cochrane Database of Systematic Reviews;">
+<meta name="citation_reference" content="citation_title=A multicentre randomised controlled trial of the McGrath Mac videolaryngoscope versus conventional laryngoscopy;,citation_abstract=Before completion of this study, there was insufficient evidence demonstrating the superiority of videolaryngoscopy compared with direct laryngoscopy for elective tracheal intubation. We hypothesised that using videolaryngoscopy for routine tracheal intubation would result in higher first‐pass tracheal intubation success compared with direct laryngoscopy. In this multicentre randomised trial, 2092 adult patients without predicted difficult airway requiring tracheal intubation for elective surgery were allocated randomly to either videolaryngoscopy with a Macintosh blade (McGrath) or direct laryngoscopy. First‐pass tracheal intubation success was higher with the McGrath (987/1053, 94%), compared with direct laryngoscopy (848/1039, 82%); absolute risk reduction (95%CI) was 12.1% (10.9–13.6%). This resulted in a relative risk (95%CI) of unsuccessful tracheal intubation at first attempt of 0.34 (0.26–0.45; p &amp;amp;amp;lt; 0.001) for McGrath compared with direct laryngoscopy. Cormack and Lehane grade ≥ 3 was observed more frequently with direct laryngoscopy (84/1039, 8%) compared with McGrath (8/1053, 0.7%; p &amp;lt; 0.001) No significant difference in tracheal intubation‐associated adverse events was observed between groups. This study demonstrates that using McGrath videolaryngoscopy compared with direct laryngoscopy improves first‐pass tracheal intubation success in patients having elective surgery. Practitioners may consider using this device as first choice for tracheal intubation.;,citation_author=M Kriege;,citation_author=R R Noppens;,citation_author=T Turkstra;,citation_author=S Payne;,citation_author=O Kunitz;,citation_author=I Tzanova;,citation_author=I Schmidtmann;,citation_author=C Alflen;,citation_author=E V Griemert;,citation_author=F Heid;,citation_author=N Pirlich;,citation_author=E Wittenmeier;,citation_author=S Flier;,citation_author=J Chui;,citation_author=T Piepho;,citation_author=B Venker;,citation_publication_date=2023;,citation_cover_date=2023;,citation_year=2023;,citation_doi=10.1111/anae.15985;,citation_issn=0003-2409;,citation_pmid=36928625;,citation_journal_title=Anaesthesia;">
+<meta name="citation_reference" content="citation_title=Video Laryngoscopy vs Direct Laryngoscopy for Endotracheal Intubation in the Operating Room;,citation_abstract=Endotracheal tubes are typically inserted in the operating room using direct laryngoscopy. Video laryngoscopy has been reported to improve airway visualization; however, whether improved visualization reduces intubation attempts in surgical patients is unclear. To determine whether the number of intubation attempts per surgical procedure is lower when initial laryngoscopy is performed using video laryngoscopy or direct laryngoscopy. Cluster randomized multiple crossover clinical trial conducted at a single US academic hospital. Patients were adults aged 18 years or older having elective or emergent cardiac, thoracic, or vascular surgical procedures who required single-lumen endotracheal intubation for general anesthesia. Patients were enrolled from March 30, 2021, to December 31, 2022. Data analysis was based on intention to treat. Two sets of 11 operating rooms were randomized on a 1-week basis to perform hyperangulated video laryngoscopy or direct laryngoscopy for the initial intubation attempt. The primary outcome was the number of operating room intubation attempts per surgical procedure. Secondary outcomes were intubation failure, defined as the responsible clinician switching to an alternative laryngoscopy device for any reason at any time, or by more than 3 intubation attempts, and a composite of airway and dental injuries. Among 8429 surgical procedures in 7736 patients, the median patient age was 66 (IQR, 56-73) years, 35% (2950) were women, and 85% (7135) had elective surgical procedures. More than 1 intubation attempt was required in 77 of 4413 surgical procedures (1.7%) randomized to receive video laryngoscopy vs 306 of 4016 surgical procedures (7.6%) randomized to receive direct laryngoscopy, with an estimated proportional odds ratio for the number of intubation attempts of 0.20 (95% CI, 0.14-0.28; P &amp;amp;amp;lt; .001). Intubation failure occurred in 12 of 4413 surgical procedures (0.27%) using video laryngoscopy vs 161 of 4016 surgical procedures (4.0%) using direct laryngoscopy (relative risk, 0.06; 95% CI, 0.03-0.14; P &amp;lt; .001) with an unadjusted absolute risk difference of −3.7% (95% CI, −4.4% to −3.2%). Airway and dental injuries did not differ significantly between video laryngoscopy (41 injuries [0.93%]) vs direct laryngoscopy (42 injuries [1.1%]). In this study among adults having surgical procedures who required single-lumen endotracheal intubation for general anesthesia, hyperangulated video laryngoscopy decreased the number of attempts needed to achieve endotracheal intubation compared with direct laryngoscopy at a single academic medical center in the US. Results suggest that video laryngoscopy may be a preferable approach for intubating patients undergoing surgical procedures. ClinicalTrials.gov Identifier: NCT04701762;,citation_author=Kurt Ruetzler;,citation_author=Sergio Bustamante;,citation_author=Marc T Schmidt;,citation_author=Federico Almonacid-Cardenas;,citation_author=Andra Duncan;,citation_author=Andrew Bauer;,citation_author=Alparslan Turan;,citation_author=Nikolaos J Skubas;,citation_author=Daniel I Sessler;,citation_author=Collaborative VLS Trial Group;,citation_publication_date=2024;,citation_cover_date=2024;,citation_year=2024;,citation_issue=15;,citation_doi=10.1001/jama.2024.0762;,citation_issn=0098-7484;,citation_pmid=38497992;,citation_volume=331;,citation_journal_title=JAMA;">
+<meta name="citation_reference" content="citation_title=Size and distribution of the global volume of surgery in 2012;,citation_abstract=To estimate global surgical volume in 2012 and compare it with estimates from 2004. For the 194 Member States of the World Health Organization, we searched PubMed for studies and contacted key informants for reports on surgical volumes between 2005 and 2012. We obtained data on population and total health expenditure per capita for 2012 and categorized Member States as very-low, low, middle and high expenditure. Data on caesarean delivery were obtained from validated statistical reports. For Member States without recorded surgical data, we estimated volumes by multiple imputation using data on total health expenditure. We estimated caesarean deliveries as a proportion of all surgery. We identified 66 Member States reporting surgical data. We estimated that 312.9 million operations (95% confidence interval, CI: 266.2–359.5) took place in 2012, an increase from the 2004 estimate of 226.4 million operations. Only 6.3% (95% CI: 1.7–22.9) and 23.1% (95% CI: 14.8–36.7) of operations took place in very-low- and low-expenditure Member States representing 36.8% (2573 million people) and 34.2% (2393 million people) of the global population of 7001 million people, respectively. Caesarean deliveries comprised 29.6% (5.8/19.6 million operations; 95% CI: 9.7–91.7) of the total surgical volume in very-low-expenditure Member States, but only 2.7% (5.1/187.0 million operations; 95% CI: 2.2–3.4) in high-expenditure Member States. Surgical volume is large and growing, with caesarean delivery comprising nearly a third of operations in most resource-poor settings. Nonetheless, there remains disparity in the provision of surgical services globally.;,citation_author=Thomas G Weiser;,citation_author=Alex B Haynes;,citation_author=George Molina;,citation_author=Stuart R Lipsitz;,citation_author=Micaela M Esquivel;,citation_author=Tarsicio Uribe-Leitz;,citation_author=Rui Fu;,citation_author=Tej Azad;,citation_author=Tiffany E Chao;,citation_author=William R Berry;,citation_author=Atul A Gawande;,citation_publication_date=2016;,citation_cover_date=2016;,citation_year=2016;,citation_issue=3;,citation_doi=10.2471/blt.15.159293;,citation_issn=0042-9686;,citation_pmid=26966331;,citation_volume=94;,citation_journal_title=Bulletin of the World Health Organization;">
+<meta name="citation_reference" content="citation_title=The Glidescope® system: a clinical assessment of performance;,citation_abstract=The Glidescope® is a new videolaryngoscope. It has a digital camera incorporated in the blade which displays a view of the vocal cords on a monitor. This allows the placement of a tracheal tube to be visualised. We describe its performance in 50 patients who required orotracheal intubation for elective surgery. Two investigators performed 25 intubations each. Intubation with the Glidescope® was successful in 47 of the 50 cases. The three failures occurred early in the series and were attributed to the initial learning curve. The success rate after the first eight patients in each series was 100%. The median (IQR [range]) time to intubation was 40 (30–55 [15–105]) s. The Glidescope® provided a grade I view of the glottis in 44 cases and a grade II view in six cases. The view of the larynx was improved in almost half (23) of the cases. The Glidescope® improved the view by one grade in 22 and by two grades in one patient. We conclude that the Glidescope® is an effective device for tracheal intubation and provides an improved view of the larynx. Further clinical studies are necessary to evaluate its role in airways that are difficult to manage.;,citation_author=M. R. Rai;,citation_author=A. Dering;,citation_author=C. Verghese;,citation_publication_date=2005;,citation_cover_date=2005;,citation_year=2005;,citation_issue=1;,citation_doi=10.1111/j.1365-2044.2004.04013.x;,citation_issn=0003-2409;,citation_pmid=15601274;,citation_volume=60;,citation_journal_title=Anaesthesia;">
+</head>
+
+  <body class="quarto-notebook">
+    <div id="quarto-embed-header" class="headroom fixed-top bg-primary">
+      
+      <a onclick="window.quartoBackToArticle(); return false;" class="btn btn-primary quarto-back-link" href=""><i class="bi bi-caret-left"></i> Back to Article</a>
+      <h6><i class="bi bi-journal-code"></i> Article Notebook</h6>
+
+            <a href="./abstract01_index.qmd" class="btn btn-primary quarto-download-embed" download="abstract01_index.qmd">Download Source</a>
+          </div>
+
+     <header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Conventional vs.&nbsp;Video-Asssisted Larnygoscopy in Perioperative Endotracheal Intubations (COVALENT): a multi-center randomized, controlled trial</h1>
+          </div>
+
+    
+    <div class="quarto-title-meta-container">
+      <div class="quarto-title-meta-column-start">
+            <div class="quarto-title-meta-author">
+          <div class="quarto-title-meta-heading">Authors</div>
+          <div class="quarto-title-meta-heading">Affiliations</div>
+          
+                <div class="quarto-title-meta-contents">
+            <p class="author">Benedikt Schmid <a href="https://orcid.org/0000-0003-3413-0690" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+          </div>
+                <div class="quarto-title-meta-contents">
+                    <p class="affiliation">
+                        <a href="https://www.ukw.de/anaesthesie/startseite/">
+                        University Hospital Würzburg, Department of Anaesthesiology, Intensive Care, Emergency and Pain Medicine, Würzburg, Germany
+                        </a>
+                      </p>
+                  </div>
+                      <div class="quarto-title-meta-contents">
+            <p class="author">Linda Grüßer <a href="https://orcid.org/0000-0002-1274-5611" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+          </div>
+                <div class="quarto-title-meta-contents">
+                    <p class="affiliation">
+                        Department of Anaesthesiology, RWTH Aachen University Hospital, Germany
+                      </p>
+                  </div>
+                      <div class="quarto-title-meta-contents">
+            <p class="author">Maria Wittmann </p>
+          </div>
+                <div class="quarto-title-meta-contents">
+                    <p class="affiliation">
+                        University Hospital Bonn, Department of Anaesthesiology, Bonn, Germany
+                      </p>
+                  </div>
+                      <div class="quarto-title-meta-contents">
+            <p class="author">Robert Werdehausen </p>
+          </div>
+                <div class="quarto-title-meta-contents">
+                    <p class="affiliation">
+                        Department of Anaesthesiology and Intensive Care, Medical Faculty, University of Leipzig, Germany
+                      </p>
+                  </div>
+                      <div class="quarto-title-meta-contents">
+            <p class="author">Christopher Neuhaus <a href="https://orcid.org/0000-0001-7262-3723" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+          </div>
+                <div class="quarto-title-meta-contents">
+                    <p class="affiliation">
+                        Department of Anesthesiology, University Hospital Heidelberg, Heidelberg, Germany
+                      </p>
+                  </div>
+                      <div class="quarto-title-meta-contents">
+            <p class="author">Peter Paal <a href="https://orcid.org/0000-0002-2939-4782" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+          </div>
+                <div class="quarto-title-meta-contents">
+                    <p class="affiliation">
+                        Department of Anaesthesiology and Intensive Care Medicine, St.&nbsp;John of God Hospital, Paracelsus Medical University, Salzburg, Austria
+                      </p>
+                  </div>
+                      <div class="quarto-title-meta-contents">
+            <p class="author">Patrick Meybohm <a href="https://orcid.org/0000-0002-2666-8696" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+          </div>
+                <div class="quarto-title-meta-contents">
+                    <p class="affiliation">
+                        University Hospital Würzburg, Department of Anaesthesiology, Intensive Care, Emergency and Pain Medicine, Würzburg, Germany
+                      </p>
+                  </div>
+                      <div class="quarto-title-meta-contents">
+            <p class="author">Peter Kranke <a href="https://orcid.org/0000-0001-5324-981X" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+          </div>
+                <div class="quarto-title-meta-contents">
+                    <p class="affiliation">
+                        University Hospital Würzburg, Department of Anaesthesiology, Intensive Care, Emergency and Pain Medicine, Würzburg, Germany
+                      </p>
+                  </div>
+                      <div class="quarto-title-meta-contents">
+            <p class="author">Gregor Massoth </p>
+          </div>
+                <div class="quarto-title-meta-contents">
+                    <p class="affiliation">
+                        University Hospital Bonn, Department of Anaesthesiology, Bonn, Germany
+                      </p>
+                  </div>
+                    </div>
+        
+        <div class="quarto-title-meta">
+
+                      
+          
+                
+              </div>
+      </div>
+      <div class="quarto-title-meta-column-end quarto-other-formats-target">
+      </div>
+    </div>
+
+
+
+    <div class="quarto-other-links-text-target">
+    </div>  </div>
+</header><div id="quarto-content" class="page-columns page-rows-contents page-layout-article toc-left">
+<div id="quarto-sidebar-toc-left" class="sidebar toc-left">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#methods" id="toc-methods" class="nav-link" data-scroll-target="#methods">Methods</a></li>
+  <li><a href="#results" id="toc-results" class="nav-link" data-scroll-target="#results">Results</a>
+  <ul class="collapse">
+  <li><a href="#population" id="toc-population" class="nav-link" data-scroll-target="#population">Population</a></li>
+  <li><a href="#primary-outcome" id="toc-primary-outcome" class="nav-link" data-scroll-target="#primary-outcome">Primary Outcome</a></li>
+  <li><a href="#secondary-outcomes" id="toc-secondary-outcomes" class="nav-link" data-scroll-target="#secondary-outcomes">Secondary Outcomes</a></li>
+  </ul></li>
+  <li><a href="#discussion" id="toc-discussion" class="nav-link" data-scroll-target="#discussion">Discussion</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul>
+</nav>
+</div>
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+</div>
+<main class="content quarto-banner-title-block" id="quarto-document-content">      
+
+       <div class="cell-container"><div class="cell-decorator"><pre>In [1]:</pre></div><div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.5
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ ggplot2   3.5.1     ✔ tibble    3.2.1
+✔ lubridate 1.9.4     ✔ tidyr     1.3.1
+✔ purrr     1.0.4     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(gt)</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(flextable)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>
+Attaching package: 'flextable'
+
+The following object is masked from 'package:purrr':
+
+    compose</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(gtsummary)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>
+Attaching package: 'gtsummary'
+
+The following object is masked from 'package:flextable':
+
+    continuous_summary</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(rstatix)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>
+Attaching package: 'rstatix'
+
+The following object is masked from 'package:stats':
+
+    filter</code></pre>
+</div>
+</div></div>
+<section id="introduction" class="level1">
+<h1>Introduction</h1>
+<p>Each year, more than 300 million major surgical procedures have been estimated to take place under some form of anesthesia<span class="citation" data-cites="Weiser.2016"><sup><a href="#ref-Weiser.2016" role="doc-biblioref">1</a></sup></span>. This implies that at least 100 million endotracheal intubations are performed annually in a peri-operative context. To facilitate successful intubation, the anesthetist uses some form of laryngoscope to be able to safely place the endotracheal tube in its correct position. Ever since video laryngoscopes have been introduced in 2001<span class="citation" data-cites="Rai.2005"><sup><a href="#ref-Rai.2005" role="doc-biblioref">2</a></sup></span>, many studies have been performed to compare these new, camera-guided instruments to the conventional, direct method of laryngoscopy. Regarding the blades used in the procedure, mainly two different geometries have found their way into routine clinical pratice: the classic, Macintosh-like shape already known from direct laryngoscopy and a hyperangulated shape, which is supposed to enable the view onto the glottic plane even in challenging anatomical surroundings. Regardless of the type of laryngoscope, successful intubation at the first attempt, so-called first-pass success, is widely recognized as the outcome most relevant to the patient.</p>
+<p>A large number of trials with mostly insufficient statistical power culminated in the most recent version of a Cochrane systematic review and meta-analysis in 2022<span class="citation" data-cites="Hansel.2022"><sup><a href="#ref-Hansel.2022" role="doc-biblioref">3</a></sup></span>. Therein, video laryngsocopy tended to enable higher first-pass success rates with either Macintosh-like or hyperangulated blades compared to the conventional approach. However, the certainty of evidence remained low due to large statistical heterogeneity. Since then, mainly two large trials set out to overcome these limitations by including sufficiently high numbers of patients: First, Kriege et al.&nbsp;found video laryngoscopy with Macintosh-like blades to achieve higher first-pass success rates than conventional laryngoscopy in a multicenter randomized-controlled trial<span class="citation" data-cites="Kriege.2023"><sup><a href="#ref-Kriege.2023" role="doc-biblioref">4</a></sup></span>. Second, Ruetzler et al.&nbsp;presented findings from a large single-center cluster-randomized trial, demonstrating superiority of video laryngoscopy with a hyperangulated blade<span class="citation" data-cites="Ruetzler.2024"><sup><a href="#ref-Ruetzler.2024" role="doc-biblioref">5</a></sup></span>. However, neither of the trials incorporated both Macintosh-like and hyperangulated blades. Also, they were limited to only one respective brand and build of video laryngoscopes.</p>
+<p>So, even after these comprehensive trials, there remained substantial lack in the generalizability of the evidence. To address this, we implemented a multicenter, randomized-controlled trial incorporating both Macintosh-like and hyperangulated blades with no restrictions on model or brand. Taking all this into account, the COVALENT trial is intended to deliver the final pieces of evidence on which type of larnyngoscopy enables the highest first-pass success rates for routine endotracheal intubations in the operating room: conventional direct, Macintosh-like video or hyperangulated video laryngsocopy?</p>
+</section>
+<section id="methods" class="level1">
+<h1>Methods</h1>
+<p>Patients were recruited according to the study protocol published previously<span class="citation" data-cites="Schmid.2023"><sup><a href="#ref-Schmid.2023" role="doc-biblioref">6</a></sup></span>. In short, patients had to be adults scheduled for elective surgery. Exclusion criteria, namely pregnancy, a history of difficult airway or medical concerns put forth by the anesthesia provider in charge of the intervention. Patients were enrolled after written informed consent and randomized in a 1:1:1 ratio into aone of three arms: conventional laryngoscopy (CL, control group), video laryngoscopy with Macintosh-like blade (VLM), or video laryngoscopy with hyperangulated blade (VLH). Randomization was done in permuted blocks stratified by study site. Randomization merely determined the geometry of the laryngoscope but not the manufacturer, which was determined by local conditions at each study site. However, the brand and build of the used laryngoscopes was recorded in the eCRF.<br>
+Each endotracheal intubation within the trial was observed and documented on site and in real time by one of several previously trained study observers. Most study outcomes were recorded using the Work Observation Method By Activity Timing (WOMBAT) software (WOMBAT 3.0, 2020<span class="citation" data-cites="Ballermann.2011"><sup><a href="#ref-Ballermann.2011" role="doc-biblioref">7</a></sup></span>), which allowed for quick and precise capture of outcomes and time stamps. The remainder of parameters was taken from the patients’ clinical records.<br>
+All study data were centrally stored in an electronic case report Form (eCRF; OpenClinica open source software, version 3.16 , Copyright OpenClinica LLC and collaborators, Waltham, MA, USA, www.OpenClinica.com). To decide on non-inferiority of the primary outcome, equal or up to 5% less efficacy of the interventions in first-pass success rates were pre-defined as non-inferior. For tests on superiority, statistical significance was assumed at p&lt;0.05. All data analysis was performed using R Statistical Software<span class="citation" data-cites="Team.2024"><sup><a href="#ref-Team.2024" role="doc-biblioref">8</a></sup></span> (v4.4.2).</p>
+</section>
+<section id="results" class="level1">
+<h1>Results</h1>
+<section id="population" class="level2">
+<h2 class="anchored" data-anchor-id="population">Population</h2>
+<div class="cell-container"><div class="cell-decorator"><pre>In [2]:</pre></div><div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>data_clean_itt <span class="ot">&lt;-</span> <span class="fu">read_rds</span>(<span class="st">"../data/data_clean_itt.rds"</span>) </span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>n_included_total <span class="ot">&lt;-</span> data_clean_itt <span class="sc">|&gt;</span></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">nrow</span>()</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>n_randomized_total <span class="ot">&lt;-</span> data_clean_itt <span class="sc">|&gt;</span></span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(rando_result)) <span class="sc">|&gt;</span></span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">nrow</span>()</span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>date_first_patient_in <span class="ot">&lt;-</span> <span class="fu">min</span>(data_clean_itt<span class="sc">$</span>date_inclusion)</span>
+<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a>date_last_patient_in <span class="ot">&lt;-</span> <span class="fu">max</span>(data_clean_itt<span class="sc">$</span>date_inclusion)</span>
+<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a>n_treatment_received <span class="ot">&lt;-</span> <span class="fu">read_rds</span>(<span class="st">"../data/data_clean.rds"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(rando_result) <span class="sc">&amp;</span> <span class="sc">!</span><span class="fu">is.na</span>(intubation_start)) <span class="sc">|&gt;</span> <span class="fu">nrow</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div></div>
+<p>Between 28/03/22 and 17/02/25, we included 2855 and randomized 2532 patients in six anesthesia departments. Out of all randomized patients, 2389 received treatment as per protocol (94.35%). Characteristics of the study population are shown in <a href="#tbl-population_itt" class="quarto-xref">Table&nbsp;1</a>.</p>
+<div class="cell-container"><div class="cell-decorator"><pre>In [3]:</pre></div><div class="cell">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>data_descritpive_statistics_itt <span class="ot">&lt;-</span> <span class="fu">read_rds</span>(<span class="st">"../data/data_clean_itt.rds"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(sex, age, BMI, surg_specialty, ASA, hist_OSAS, ULBT, mallampati, patil, RSI, spo2_baseline, preoxy80, relaxation_complete, intubation_start, rando_result) <span class="sc">|&gt;</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(rando_result))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div></div>
+<div class="cell-container"><div class="cell-decorator"><pre>In [4]:</pre></div><div class="cell" data-tbl-cap-location="bottom">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>data_descritpive_statistics_itt <span class="sc">|&gt;</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="sc">-</span>intubation_start) <span class="sc">|&gt;</span></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tbl_summary</span>(</span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">by =</span> rando_result,</span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">statistic =</span> <span class="fu">list</span>(</span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>      <span class="fu">all_continuous</span>() <span class="sc">~</span> <span class="st">"{mean} ({sd})"</span>,</span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>      <span class="fu">all_categorical</span>() <span class="sc">~</span> <span class="st">"{n} / {N} ({p}%)"</span></span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a>    ),</span>
+<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">digits =</span> <span class="fu">all_continuous</span>() <span class="sc">~</span> <span class="dv">1</span>,</span>
+<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">label =</span> <span class="fu">list</span>(sex <span class="sc">~</span> <span class="st">"gender"</span>, surg_specialty <span class="sc">~</span> <span class="st">"surgical specialty"</span>, hist_OSAS <span class="sc">~</span> <span class="st">"history of OSAS"</span>, ULBT <span class="sc">~</span> <span class="st">"upper lip bite test"</span>, patil <span class="sc">~</span> <span class="st">"thyro-mental distance (cm)"</span>, RSI <span class="sc">~</span> <span class="st">"rapid sequence induction"</span>, spo2_baseline <span class="sc">~</span> <span class="st">"baseline oxygen saturation (%)"</span>, preoxy80 <span class="sc">~</span> <span class="st">"sufficient pre-oxygenation"</span>, relaxation_complete <span class="sc">~</span> <span class="st">"complete muscle relaxation"</span>),</span>
+<span id="cb11-11"><a href="#cb11-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">missing  =</span> <span class="st">"no"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb11-12"><a href="#cb11-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">add_n</span>() <span class="sc">|&gt;</span></span>
+<span id="cb11-13"><a href="#cb11-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">add_p</span>(<span class="fu">list</span>(<span class="fu">all_continuous</span>() <span class="sc">~</span> <span class="st">"oneway.test"</span>, <span class="fu">all_categorical</span>() <span class="sc">~</span> <span class="st">"fisher.test"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb11-14"><a href="#cb11-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">as_flex_table</span>() <span class="sc">|&gt;</span></span>
+<span id="cb11-15"><a href="#cb11-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set_table_properties</span>(<span class="at">opts_pdf =</span> <span class="fu">list</span>(<span class="at">float =</span> <span class="st">"float"</span>), <span class="at">layout =</span> <span class="st">"autofit"</span>, <span class="at">width =</span> <span class="fl">0.8</span>) <span class="sc">|&gt;</span></span>
+<span id="cb11-16"><a href="#cb11-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">font</span>(<span class="at">fontname =</span> <span class="st">"Times New Roman"</span>, <span class="at">part =</span> <span class="st">"all"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb11-17"><a href="#cb11-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">fontsize</span>(<span class="at">size =</span> <span class="dv">10</span>, <span class="at">part =</span> <span class="st">"all"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following errors were returned during `as_flex_table()`:
+✖ For variable `ASA` (`rando_result`) and "estimate", "p.value", "conf.low",
+  and "conf.high" statistics: FEXACT error 6.  LDKEY=606 is too small for this
+  problem, (ii := key2[itp=680] = 575716433, ldstp=18180) Try increasing the
+  size of the workspace and possibly 'mult'
+✖ For variable `ULBT` (`rando_result`) and "estimate", "p.value", "conf.low",
+  and "conf.high" statistics: FEXACT error 6.  LDKEY=608 is too small for this
+  problem, (ii := key2[itp=774] = 133415425, ldstp=18240) Try increasing the
+  size of the workspace and possibly 'mult'
+✖ For variable `mallampati` (`rando_result`) and "estimate", "p.value",
+  "conf.low", and "conf.high" statistics: FEXACT error 6.  LDKEY=606 is too
+  small for this problem, (ii := key2[itp=429] = 589863859, ldstp=18180) Try
+  increasing the size of the workspace and possibly 'mult'
+✖ For variable `surg_specialty` (`rando_result`) and "estimate", "p.value",
+  "conf.low", and "conf.high" statistics: FEXACT error 7(location). LDSTP=18180
+  is too small for this problem, (pastp=121.509, ipn_0:=ipoin[itp=235]=1232,
+  stp[ipn_0]=119.693). Increase workspace or consider using
+  'simulate.p.value=TRUE'</code></pre>
+</div>
+<div class="cell-container"><div class="cell-decorator"><pre>In [5]:</pre></div><div id="tbl-population_itt" class="cell quarto-float quarto-figure quarto-figure-center anchored" data-tbl-cap-location="bottom">
+<figure class="quarto-float quarto-float-tbl figure">
+<div aria-describedby="tbl-population_itt-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output-display">
+<div class="tabwid"><style>.cl-2de9aa26{table-layout:auto;width:80%;}.cl-2de575dc{font-family:'Times New Roman';font-size:10pt;font-weight:bold;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-2de575f0{font-family:'Times New Roman';font-size:10pt;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-2de575f1{font-family:'Times New Roman';font-size:6pt;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;position: relative;bottom:3pt;}.cl-2de72f58{margin:0;text-align:left;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:2pt;padding-top:2pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-2de72f59{margin:0;text-align:center;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:2pt;padding-top:2pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-2de72f5a{margin:0;text-align:left;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-2de72f5b{margin:0;text-align:center;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-2de72f62{margin:0;text-align:left;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:15pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-2de72f63{margin:0;text-align:left;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-2de74010{background-color:transparent;vertical-align: middle;border-bottom: 1pt solid rgba(0, 0, 0, 1.00);border-top: 1pt solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2de7401a{background-color:transparent;vertical-align: middle;border-bottom: 1pt solid rgba(0, 0, 0, 1.00);border-top: 1pt solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2de7401b{background-color:transparent;vertical-align: middle;border-bottom: 1pt solid rgba(0, 0, 0, 1.00);border-top: 1pt solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2de7401c{background-color:transparent;vertical-align: middle;border-bottom: 1pt solid rgba(0, 0, 0, 1.00);border-top: 1pt solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2de7401d{background-color:transparent;vertical-align: middle;border-bottom: 1pt solid rgba(0, 0, 0, 1.00);border-top: 1pt solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2de7401e{background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2de7401f{background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2de74024{background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2de74025{background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2de74026{background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2de74027{background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2de74028{background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2de74029{background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2de7402e{background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2de7402f{background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2de74030{background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2de74031{background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2de74032{background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2de74033{background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2de74038{background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2de74039{background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2de7403a{background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2de7403b{background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2de7403c{background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2de74042{background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2de74043{background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2de74044{background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2de74045{background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2de74046{background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2de74047{background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2de74048{background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2de7404c{background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2de7404d{background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2de7404e{background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2de7404f{background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2de74050{background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2de74056{background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2de74057{background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2de74058{background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2de74059{background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2de7405a{background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2de74060{background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2de74061{background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2de74062{background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2de74063{background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2de74064{background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2de74065{background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2de74066{background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2de7406a{background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2de7406b{background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2de7406c{background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2de7406d{background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2de7406e{background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2de7406f{background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2de74074{background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2de74075{background-color:transparent;vertical-align: top;border-bottom: 1pt solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2de74076{background-color:transparent;vertical-align: top;border-bottom: 1pt solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2de74077{background-color:transparent;vertical-align: top;border-bottom: 1pt solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2de74078{background-color:transparent;vertical-align: top;border-bottom: 1pt solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2de74079{background-color:transparent;vertical-align: top;border-bottom: 1pt solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2de7407e{background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(255, 255, 255, 0.00);border-top: 0 solid rgba(255, 255, 255, 0.00);border-left: 0 solid rgba(255, 255, 255, 0.00);border-right: 0 solid rgba(255, 255, 255, 0.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2de7407f{background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(255, 255, 255, 0.00);border-top: 0 solid rgba(255, 255, 255, 0.00);border-left: 0 solid rgba(255, 255, 255, 0.00);border-right: 0 solid rgba(255, 255, 255, 0.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2de74080{background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(255, 255, 255, 0.00);border-top: 0 solid rgba(255, 255, 255, 0.00);border-left: 0 solid rgba(255, 255, 255, 0.00);border-right: 0 solid rgba(255, 255, 255, 0.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2de74081{background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(255, 255, 255, 0.00);border-top: 0 solid rgba(255, 255, 255, 0.00);border-left: 0 solid rgba(255, 255, 255, 0.00);border-right: 0 solid rgba(255, 255, 255, 0.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2de74082{background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(255, 255, 255, 0.00);border-top: 0 solid rgba(255, 255, 255, 0.00);border-left: 0 solid rgba(255, 255, 255, 0.00);border-right: 0 solid rgba(255, 255, 255, 0.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}</style><table data-quarto-disable-processing="true" class="cl-2de9aa26"><thead><tr style="overflow-wrap:break-word;"><th class="cl-2de74010"><p class="cl-2de72f58"><span class="cl-2de575dc">Characteristic</span></p></th><th class="cl-2de7401a"><p class="cl-2de72f59"><span class="cl-2de575dc">N</span></p></th><th class="cl-2de7401b"><p class="cl-2de72f59"><span class="cl-2de575dc">CL</span><span class="cl-2de575f0">  </span><br><span class="cl-2de575f0">N = 848</span><span class="cl-2de575f1">1</span></p></th><th class="cl-2de7401c"><p class="cl-2de72f59"><span class="cl-2de575dc">VLM</span><span class="cl-2de575f0">  </span><br><span class="cl-2de575f0">N = 841</span><span class="cl-2de575f1">1</span></p></th><th class="cl-2de7401b"><p class="cl-2de72f59"><span class="cl-2de575dc">VLH</span><span class="cl-2de575f0">  </span><br><span class="cl-2de575f0">N = 843</span><span class="cl-2de575f1">1</span></p></th><th class="cl-2de7401d"><p class="cl-2de72f59"><span class="cl-2de575dc">p-value</span><span class="cl-2de575f1">2</span></p></th></tr></thead><tbody><tr style="overflow-wrap:break-word;"><td class="cl-2de7401e"><p class="cl-2de72f5a"><span class="cl-2de575f0">gender</span></p></td><td class="cl-2de7401f"><p class="cl-2de72f5b"><span class="cl-2de575f0">2,532</span></p></td><td class="cl-2de74024"><p class="cl-2de72f5b"><span class="cl-2de575f0"></span></p></td><td class="cl-2de74025"><p class="cl-2de72f5b"><span class="cl-2de575f0"></span></p></td><td class="cl-2de74024"><p class="cl-2de72f5b"><span class="cl-2de575f0"></span></p></td><td class="cl-2de74026"><p class="cl-2de72f5b"><span class="cl-2de575f0">&gt;0.9</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-2de74027"><p class="cl-2de72f62"><span class="cl-2de575f0">male</span></p></td><td class="cl-2de74028"><p class="cl-2de72f5b"><span class="cl-2de575f0"></span></p></td><td class="cl-2de74029"><p class="cl-2de72f5b"><span class="cl-2de575f0">482 / 848 (57%)</span></p></td><td class="cl-2de7402e"><p class="cl-2de72f5b"><span class="cl-2de575f0">473 / 841 (56%)</span></p></td><td class="cl-2de74029"><p class="cl-2de72f5b"><span class="cl-2de575f0">470 / 843 (56%)</span></p></td><td class="cl-2de7402f"><p class="cl-2de72f5b"><span class="cl-2de575f0"></span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-2de74027"><p class="cl-2de72f62"><span class="cl-2de575f0">female</span></p></td><td class="cl-2de74028"><p class="cl-2de72f5b"><span class="cl-2de575f0"></span></p></td><td class="cl-2de74029"><p class="cl-2de72f5b"><span class="cl-2de575f0">366 / 848 (43%)</span></p></td><td class="cl-2de7402e"><p class="cl-2de72f5b"><span class="cl-2de575f0">367 / 841 (44%)</span></p></td><td class="cl-2de74029"><p class="cl-2de72f5b"><span class="cl-2de575f0">373 / 843 (44%)</span></p></td><td class="cl-2de7402f"><p class="cl-2de72f5b"><span class="cl-2de575f0"></span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-2de74027"><p class="cl-2de72f62"><span class="cl-2de575f0">diverse</span></p></td><td class="cl-2de74028"><p class="cl-2de72f5b"><span class="cl-2de575f0"></span></p></td><td class="cl-2de74029"><p class="cl-2de72f5b"><span class="cl-2de575f0">0 / 848 (0%)</span></p></td><td class="cl-2de7402e"><p class="cl-2de72f5b"><span class="cl-2de575f0">1 / 841 (0.1%)</span></p></td><td class="cl-2de74029"><p class="cl-2de72f5b"><span class="cl-2de575f0">0 / 843 (0%)</span></p></td><td class="cl-2de7402f"><p class="cl-2de72f5b"><span class="cl-2de575f0"></span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-2de74027"><p class="cl-2de72f5a"><span class="cl-2de575f0">age</span></p></td><td class="cl-2de74028"><p class="cl-2de72f5b"><span class="cl-2de575f0">2,532</span></p></td><td class="cl-2de74029"><p class="cl-2de72f5b"><span class="cl-2de575f0">59.0 (15.8)</span></p></td><td class="cl-2de7402e"><p class="cl-2de72f5b"><span class="cl-2de575f0">59.6 (15.5)</span></p></td><td class="cl-2de74029"><p class="cl-2de72f5b"><span class="cl-2de575f0">59.8 (15.5)</span></p></td><td class="cl-2de7402f"><p class="cl-2de72f5b"><span class="cl-2de575f0">0.5</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-2de74027"><p class="cl-2de72f5a"><span class="cl-2de575f0">BMI</span></p></td><td class="cl-2de74028"><p class="cl-2de72f5b"><span class="cl-2de575f0">2,526</span></p></td><td class="cl-2de74029"><p class="cl-2de72f5b"><span class="cl-2de575f0">27.4 (5.9)</span></p></td><td class="cl-2de7402e"><p class="cl-2de72f5b"><span class="cl-2de575f0">27.6 (6.7)</span></p></td><td class="cl-2de74029"><p class="cl-2de72f5b"><span class="cl-2de575f0">27.4 (6.1)</span></p></td><td class="cl-2de7402f"><p class="cl-2de72f5b"><span class="cl-2de575f0">0.8</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-2de74030"><p class="cl-2de72f5a"><span class="cl-2de575f0">surgical specialty</span></p></td><td class="cl-2de74031"><p class="cl-2de72f5b"><span class="cl-2de575f0">2,527</span></p></td><td class="cl-2de74032"><p class="cl-2de72f5b"><span class="cl-2de575f0"></span></p></td><td class="cl-2de74033"><p class="cl-2de72f5b"><span class="cl-2de575f0"></span></p></td><td class="cl-2de74032"><p class="cl-2de72f5b"><span class="cl-2de575f0"></span></p></td><td class="cl-2de74038"><p class="cl-2de72f5b"><span class="cl-2de575f0"></span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-2de7401e"><p class="cl-2de72f62"><span class="cl-2de575f0">abdominal surgery</span></p></td><td class="cl-2de7401f"><p class="cl-2de72f5b"><span class="cl-2de575f0"></span></p></td><td class="cl-2de74024"><p class="cl-2de72f5b"><span class="cl-2de575f0">282 / 848 (33%)</span></p></td><td class="cl-2de74025"><p class="cl-2de72f5b"><span class="cl-2de575f0">267 / 839 (32%)</span></p></td><td class="cl-2de74024"><p class="cl-2de72f5b"><span class="cl-2de575f0">298 / 840 (35%)</span></p></td><td class="cl-2de74026"><p class="cl-2de72f5b"><span class="cl-2de575f0"></span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-2de74027"><p class="cl-2de72f62"><span class="cl-2de575f0">trauma surgery</span></p></td><td class="cl-2de74028"><p class="cl-2de72f5b"><span class="cl-2de575f0"></span></p></td><td class="cl-2de74029"><p class="cl-2de72f5b"><span class="cl-2de575f0">164 / 848 (19%)</span></p></td><td class="cl-2de7402e"><p class="cl-2de72f5b"><span class="cl-2de575f0">154 / 839 (18%)</span></p></td><td class="cl-2de74029"><p class="cl-2de72f5b"><span class="cl-2de575f0">159 / 840 (19%)</span></p></td><td class="cl-2de7402f"><p class="cl-2de72f5b"><span class="cl-2de575f0"></span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-2de74030"><p class="cl-2de72f62"><span class="cl-2de575f0">urology</span></p></td><td class="cl-2de74031"><p class="cl-2de72f5b"><span class="cl-2de575f0"></span></p></td><td class="cl-2de74032"><p class="cl-2de72f5b"><span class="cl-2de575f0">95 / 848 (11%)</span></p></td><td class="cl-2de74033"><p class="cl-2de72f5b"><span class="cl-2de575f0">93 / 839 (11%)</span></p></td><td class="cl-2de74032"><p class="cl-2de72f5b"><span class="cl-2de575f0">86 / 840 (10%)</span></p></td><td class="cl-2de74038"><p class="cl-2de72f5b"><span class="cl-2de575f0"></span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-2de74030"><p class="cl-2de72f62"><span class="cl-2de575f0">gynecology</span></p></td><td class="cl-2de74031"><p class="cl-2de72f5b"><span class="cl-2de575f0"></span></p></td><td class="cl-2de74032"><p class="cl-2de72f5b"><span class="cl-2de575f0">58 / 848 (6.8%)</span></p></td><td class="cl-2de74033"><p class="cl-2de72f5b"><span class="cl-2de575f0">55 / 839 (6.6%)</span></p></td><td class="cl-2de74032"><p class="cl-2de72f5b"><span class="cl-2de575f0">44 / 840 (5.2%)</span></p></td><td class="cl-2de74038"><p class="cl-2de72f5b"><span class="cl-2de575f0"></span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-2de74027"><p class="cl-2de72f62"><span class="cl-2de575f0">ENT</span></p></td><td class="cl-2de74028"><p class="cl-2de72f5b"><span class="cl-2de575f0"></span></p></td><td class="cl-2de74029"><p class="cl-2de72f5b"><span class="cl-2de575f0">63 / 848 (7.4%)</span></p></td><td class="cl-2de7402e"><p class="cl-2de72f5b"><span class="cl-2de575f0">74 / 839 (8.8%)</span></p></td><td class="cl-2de74029"><p class="cl-2de72f5b"><span class="cl-2de575f0">71 / 840 (8.5%)</span></p></td><td class="cl-2de7402f"><p class="cl-2de72f5b"><span class="cl-2de575f0"></span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-2de7401e"><p class="cl-2de72f62"><span class="cl-2de575f0">thoracic surgery</span></p></td><td class="cl-2de7401f"><p class="cl-2de72f5b"><span class="cl-2de575f0"></span></p></td><td class="cl-2de74024"><p class="cl-2de72f5b"><span class="cl-2de575f0">18 / 848 (2.1%)</span></p></td><td class="cl-2de74025"><p class="cl-2de72f5b"><span class="cl-2de575f0">18 / 839 (2.1%)</span></p></td><td class="cl-2de74024"><p class="cl-2de72f5b"><span class="cl-2de575f0">13 / 840 (1.5%)</span></p></td><td class="cl-2de74026"><p class="cl-2de72f5b"><span class="cl-2de575f0"></span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-2de7401e"><p class="cl-2de72f62"><span class="cl-2de575f0">ophthalmology</span></p></td><td class="cl-2de7401f"><p class="cl-2de72f5b"><span class="cl-2de575f0"></span></p></td><td class="cl-2de74024"><p class="cl-2de72f5b"><span class="cl-2de575f0">1 / 848 (0.1%)</span></p></td><td class="cl-2de74025"><p class="cl-2de72f5b"><span class="cl-2de575f0">1 / 839 (0.1%)</span></p></td><td class="cl-2de74024"><p class="cl-2de72f5b"><span class="cl-2de575f0">0 / 840 (0%)</span></p></td><td class="cl-2de74026"><p class="cl-2de72f5b"><span class="cl-2de575f0"></span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-2de74027"><p class="cl-2de72f62"><span class="cl-2de575f0">neurosurgery</span></p></td><td class="cl-2de74028"><p class="cl-2de72f5b"><span class="cl-2de575f0"></span></p></td><td class="cl-2de74029"><p class="cl-2de72f5b"><span class="cl-2de575f0">33 / 848 (3.9%)</span></p></td><td class="cl-2de7402e"><p class="cl-2de72f5b"><span class="cl-2de575f0">29 / 839 (3.5%)</span></p></td><td class="cl-2de74029"><p class="cl-2de72f5b"><span class="cl-2de575f0">36 / 840 (4.3%)</span></p></td><td class="cl-2de7402f"><p class="cl-2de72f5b"><span class="cl-2de575f0"></span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-2de7401e"><p class="cl-2de72f62"><span class="cl-2de575f0">cardiac surgery</span></p></td><td class="cl-2de7401f"><p class="cl-2de72f5b"><span class="cl-2de575f0"></span></p></td><td class="cl-2de74024"><p class="cl-2de72f5b"><span class="cl-2de575f0">25 / 848 (2.9%)</span></p></td><td class="cl-2de74025"><p class="cl-2de72f5b"><span class="cl-2de575f0">25 / 839 (3.0%)</span></p></td><td class="cl-2de74024"><p class="cl-2de72f5b"><span class="cl-2de575f0">21 / 840 (2.5%)</span></p></td><td class="cl-2de74026"><p class="cl-2de72f5b"><span class="cl-2de575f0"></span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-2de74027"><p class="cl-2de72f62"><span class="cl-2de575f0">other</span></p></td><td class="cl-2de74028"><p class="cl-2de72f5b"><span class="cl-2de575f0"></span></p></td><td class="cl-2de74029"><p class="cl-2de72f5b"><span class="cl-2de575f0">109 / 848 (13%)</span></p></td><td class="cl-2de7402e"><p class="cl-2de72f5b"><span class="cl-2de575f0">123 / 839 (15%)</span></p></td><td class="cl-2de74029"><p class="cl-2de72f5b"><span class="cl-2de575f0">112 / 840 (13%)</span></p></td><td class="cl-2de7402f"><p class="cl-2de72f5b"><span class="cl-2de575f0"></span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-2de74039"><p class="cl-2de72f5a"><span class="cl-2de575f0">ASA</span></p></td><td class="cl-2de7403a"><p class="cl-2de72f5b"><span class="cl-2de575f0">2,525</span></p></td><td class="cl-2de7403b"><p class="cl-2de72f5b"><span class="cl-2de575f0"></span></p></td><td class="cl-2de7403c"><p class="cl-2de72f5b"><span class="cl-2de575f0"></span></p></td><td class="cl-2de7403b"><p class="cl-2de72f5b"><span class="cl-2de575f0"></span></p></td><td class="cl-2de74042"><p class="cl-2de72f5b"><span class="cl-2de575f0"></span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-2de74027"><p class="cl-2de72f62"><span class="cl-2de575f0">I</span></p></td><td class="cl-2de74028"><p class="cl-2de72f5b"><span class="cl-2de575f0"></span></p></td><td class="cl-2de74029"><p class="cl-2de72f5b"><span class="cl-2de575f0">93 / 847 (11%)</span></p></td><td class="cl-2de7402e"><p class="cl-2de72f5b"><span class="cl-2de575f0">87 / 839 (10%)</span></p></td><td class="cl-2de74029"><p class="cl-2de72f5b"><span class="cl-2de575f0">78 / 839 (9.3%)</span></p></td><td class="cl-2de7402f"><p class="cl-2de72f5b"><span class="cl-2de575f0"></span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-2de74027"><p class="cl-2de72f62"><span class="cl-2de575f0">II</span></p></td><td class="cl-2de74028"><p class="cl-2de72f5b"><span class="cl-2de575f0"></span></p></td><td class="cl-2de74029"><p class="cl-2de72f5b"><span class="cl-2de575f0">399 / 847 (47%)</span></p></td><td class="cl-2de7402e"><p class="cl-2de72f5b"><span class="cl-2de575f0">434 / 839 (52%)</span></p></td><td class="cl-2de74029"><p class="cl-2de72f5b"><span class="cl-2de575f0">415 / 839 (49%)</span></p></td><td class="cl-2de7402f"><p class="cl-2de72f5b"><span class="cl-2de575f0"></span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-2de74027"><p class="cl-2de72f62"><span class="cl-2de575f0">III</span></p></td><td class="cl-2de74028"><p class="cl-2de72f5b"><span class="cl-2de575f0"></span></p></td><td class="cl-2de74029"><p class="cl-2de72f5b"><span class="cl-2de575f0">326 / 847 (38%)</span></p></td><td class="cl-2de7402e"><p class="cl-2de72f5b"><span class="cl-2de575f0">289 / 839 (34%)</span></p></td><td class="cl-2de74029"><p class="cl-2de72f5b"><span class="cl-2de575f0">321 / 839 (38%)</span></p></td><td class="cl-2de7402f"><p class="cl-2de72f5b"><span class="cl-2de575f0"></span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-2de74027"><p class="cl-2de72f62"><span class="cl-2de575f0">IV</span></p></td><td class="cl-2de74028"><p class="cl-2de72f5b"><span class="cl-2de575f0"></span></p></td><td class="cl-2de74029"><p class="cl-2de72f5b"><span class="cl-2de575f0">29 / 847 (3.4%)</span></p></td><td class="cl-2de7402e"><p class="cl-2de72f5b"><span class="cl-2de575f0">29 / 839 (3.5%)</span></p></td><td class="cl-2de74029"><p class="cl-2de72f5b"><span class="cl-2de575f0">25 / 839 (3.0%)</span></p></td><td class="cl-2de7402f"><p class="cl-2de72f5b"><span class="cl-2de575f0"></span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-2de74043"><p class="cl-2de72f5a"><span class="cl-2de575f0">history of OSAS</span></p></td><td class="cl-2de74044"><p class="cl-2de72f5b"><span class="cl-2de575f0">2,493</span></p></td><td class="cl-2de74045"><p class="cl-2de72f5b"><span class="cl-2de575f0">73 / 841 (8.7%)</span></p></td><td class="cl-2de74046"><p class="cl-2de72f5b"><span class="cl-2de575f0">66 / 828 (8.0%)</span></p></td><td class="cl-2de74045"><p class="cl-2de72f5b"><span class="cl-2de575f0">71 / 824 (8.6%)</span></p></td><td class="cl-2de74047"><p class="cl-2de72f5b"><span class="cl-2de575f0">0.9</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-2de74048"><p class="cl-2de72f5a"><span class="cl-2de575f0">upper lip bite test</span></p></td><td class="cl-2de7404c"><p class="cl-2de72f5b"><span class="cl-2de575f0">2,338</span></p></td><td class="cl-2de7404d"><p class="cl-2de72f5b"><span class="cl-2de575f0"></span></p></td><td class="cl-2de7404e"><p class="cl-2de72f5b"><span class="cl-2de575f0"></span></p></td><td class="cl-2de7404d"><p class="cl-2de72f5b"><span class="cl-2de575f0"></span></p></td><td class="cl-2de7404f"><p class="cl-2de72f5b"><span class="cl-2de575f0"></span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-2de74027"><p class="cl-2de72f62"><span class="cl-2de575f0">1</span></p></td><td class="cl-2de74028"><p class="cl-2de72f5b"><span class="cl-2de575f0"></span></p></td><td class="cl-2de74029"><p class="cl-2de72f5b"><span class="cl-2de575f0">422 / 777 (54%)</span></p></td><td class="cl-2de7402e"><p class="cl-2de72f5b"><span class="cl-2de575f0">447 / 781 (57%)</span></p></td><td class="cl-2de74029"><p class="cl-2de72f5b"><span class="cl-2de575f0">445 / 780 (57%)</span></p></td><td class="cl-2de7402f"><p class="cl-2de72f5b"><span class="cl-2de575f0"></span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-2de74027"><p class="cl-2de72f62"><span class="cl-2de575f0">2</span></p></td><td class="cl-2de74028"><p class="cl-2de72f5b"><span class="cl-2de575f0"></span></p></td><td class="cl-2de74029"><p class="cl-2de72f5b"><span class="cl-2de575f0">282 / 777 (36%)</span></p></td><td class="cl-2de7402e"><p class="cl-2de72f5b"><span class="cl-2de575f0">267 / 781 (34%)</span></p></td><td class="cl-2de74029"><p class="cl-2de72f5b"><span class="cl-2de575f0">271 / 780 (35%)</span></p></td><td class="cl-2de7402f"><p class="cl-2de72f5b"><span class="cl-2de575f0"></span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-2de74027"><p class="cl-2de72f62"><span class="cl-2de575f0">3</span></p></td><td class="cl-2de74028"><p class="cl-2de72f5b"><span class="cl-2de575f0"></span></p></td><td class="cl-2de74029"><p class="cl-2de72f5b"><span class="cl-2de575f0">73 / 777 (9.4%)</span></p></td><td class="cl-2de7402e"><p class="cl-2de72f5b"><span class="cl-2de575f0">67 / 781 (8.6%)</span></p></td><td class="cl-2de74029"><p class="cl-2de72f5b"><span class="cl-2de575f0">64 / 780 (8.2%)</span></p></td><td class="cl-2de7402f"><p class="cl-2de72f5b"><span class="cl-2de575f0"></span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-2de74050"><p class="cl-2de72f5a"><span class="cl-2de575f0">mallampati</span></p></td><td class="cl-2de74056"><p class="cl-2de72f5b"><span class="cl-2de575f0">2,521</span></p></td><td class="cl-2de74057"><p class="cl-2de72f5b"><span class="cl-2de575f0"></span></p></td><td class="cl-2de74058"><p class="cl-2de72f5b"><span class="cl-2de575f0"></span></p></td><td class="cl-2de74057"><p class="cl-2de72f5b"><span class="cl-2de575f0"></span></p></td><td class="cl-2de74059"><p class="cl-2de72f5b"><span class="cl-2de575f0"></span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-2de74027"><p class="cl-2de72f62"><span class="cl-2de575f0">I</span></p></td><td class="cl-2de74028"><p class="cl-2de72f5b"><span class="cl-2de575f0"></span></p></td><td class="cl-2de74029"><p class="cl-2de72f5b"><span class="cl-2de575f0">288 / 844 (34%)</span></p></td><td class="cl-2de7402e"><p class="cl-2de72f5b"><span class="cl-2de575f0">272 / 838 (32%)</span></p></td><td class="cl-2de74029"><p class="cl-2de72f5b"><span class="cl-2de575f0">265 / 839 (32%)</span></p></td><td class="cl-2de7402f"><p class="cl-2de72f5b"><span class="cl-2de575f0"></span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-2de74027"><p class="cl-2de72f62"><span class="cl-2de575f0">II</span></p></td><td class="cl-2de74028"><p class="cl-2de72f5b"><span class="cl-2de575f0"></span></p></td><td class="cl-2de74029"><p class="cl-2de72f5b"><span class="cl-2de575f0">397 / 844 (47%)</span></p></td><td class="cl-2de7402e"><p class="cl-2de72f5b"><span class="cl-2de575f0">406 / 838 (48%)</span></p></td><td class="cl-2de74029"><p class="cl-2de72f5b"><span class="cl-2de575f0">415 / 839 (49%)</span></p></td><td class="cl-2de7402f"><p class="cl-2de72f5b"><span class="cl-2de575f0"></span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-2de74027"><p class="cl-2de72f62"><span class="cl-2de575f0">III</span></p></td><td class="cl-2de74028"><p class="cl-2de72f5b"><span class="cl-2de575f0"></span></p></td><td class="cl-2de74029"><p class="cl-2de72f5b"><span class="cl-2de575f0">113 / 844 (13%)</span></p></td><td class="cl-2de7402e"><p class="cl-2de72f5b"><span class="cl-2de575f0">108 / 838 (13%)</span></p></td><td class="cl-2de74029"><p class="cl-2de72f5b"><span class="cl-2de575f0">101 / 839 (12%)</span></p></td><td class="cl-2de7402f"><p class="cl-2de72f5b"><span class="cl-2de575f0"></span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-2de74027"><p class="cl-2de72f62"><span class="cl-2de575f0">IV</span></p></td><td class="cl-2de74028"><p class="cl-2de72f5b"><span class="cl-2de575f0"></span></p></td><td class="cl-2de74029"><p class="cl-2de72f5b"><span class="cl-2de575f0">46 / 844 (5.5%)</span></p></td><td class="cl-2de7402e"><p class="cl-2de72f5b"><span class="cl-2de575f0">52 / 838 (6.2%)</span></p></td><td class="cl-2de74029"><p class="cl-2de72f5b"><span class="cl-2de575f0">58 / 839 (6.9%)</span></p></td><td class="cl-2de7402f"><p class="cl-2de72f5b"><span class="cl-2de575f0"></span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-2de7405a"><p class="cl-2de72f5a"><span class="cl-2de575f0">thyro-mental distance (cm)</span></p></td><td class="cl-2de74060"><p class="cl-2de72f5b"><span class="cl-2de575f0">2,484</span></p></td><td class="cl-2de74061"><p class="cl-2de72f5b"><span class="cl-2de575f0">8.4 (1.6)</span></p></td><td class="cl-2de74062"><p class="cl-2de72f5b"><span class="cl-2de575f0">8.4 (1.6)</span></p></td><td class="cl-2de74061"><p class="cl-2de72f5b"><span class="cl-2de575f0">8.4 (1.6)</span></p></td><td class="cl-2de74063"><p class="cl-2de72f5b"><span class="cl-2de575f0">0.9</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-2de74027"><p class="cl-2de72f5a"><span class="cl-2de575f0">rapid sequence induction</span></p></td><td class="cl-2de74028"><p class="cl-2de72f5b"><span class="cl-2de575f0">2,391</span></p></td><td class="cl-2de74029"><p class="cl-2de72f5b"><span class="cl-2de575f0">89 / 789 (11%)</span></p></td><td class="cl-2de7402e"><p class="cl-2de72f5b"><span class="cl-2de575f0">80 / 802 (10.0%)</span></p></td><td class="cl-2de74029"><p class="cl-2de72f5b"><span class="cl-2de575f0">102 / 800 (13%)</span></p></td><td class="cl-2de7402f"><p class="cl-2de72f5b"><span class="cl-2de575f0">0.2</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-2de74064"><p class="cl-2de72f5a"><span class="cl-2de575f0">baseline oxygen saturation (%)</span></p></td><td class="cl-2de74065"><p class="cl-2de72f5b"><span class="cl-2de575f0">2,377</span></p></td><td class="cl-2de74066"><p class="cl-2de72f5b"><span class="cl-2de575f0">96.7 (8.9)</span></p></td><td class="cl-2de7406a"><p class="cl-2de72f5b"><span class="cl-2de575f0">96.3 (10.6)</span></p></td><td class="cl-2de74066"><p class="cl-2de72f5b"><span class="cl-2de575f0">97.2 (5.5)</span></p></td><td class="cl-2de7406b"><p class="cl-2de72f5b"><span class="cl-2de575f0">0.090</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-2de7406c"><p class="cl-2de72f5a"><span class="cl-2de575f0">sufficient pre-oxygenation</span></p></td><td class="cl-2de7406d"><p class="cl-2de72f5b"><span class="cl-2de575f0">2,273</span></p></td><td class="cl-2de7406e"><p class="cl-2de72f5b"><span class="cl-2de575f0">717 / 757 (95%)</span></p></td><td class="cl-2de7406f"><p class="cl-2de72f5b"><span class="cl-2de575f0">720 / 762 (94%)</span></p></td><td class="cl-2de7406e"><p class="cl-2de72f5b"><span class="cl-2de575f0">722 / 754 (96%)</span></p></td><td class="cl-2de74074"><p class="cl-2de72f5b"><span class="cl-2de575f0">0.5</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-2de74075"><p class="cl-2de72f5a"><span class="cl-2de575f0">complete muscle relaxation</span></p></td><td class="cl-2de74076"><p class="cl-2de72f5b"><span class="cl-2de575f0">1,055</span></p></td><td class="cl-2de74077"><p class="cl-2de72f5b"><span class="cl-2de575f0">189 / 340 (56%)</span></p></td><td class="cl-2de74078"><p class="cl-2de72f5b"><span class="cl-2de575f0">216 / 356 (61%)</span></p></td><td class="cl-2de74077"><p class="cl-2de72f5b"><span class="cl-2de575f0">203 / 359 (57%)</span></p></td><td class="cl-2de74079"><p class="cl-2de72f5b"><span class="cl-2de575f0">0.4</span></p></td></tr></tbody><tfoot><tr style="overflow-wrap:break-word;"><td colspan="6" class="cl-2de7407e"><p class="cl-2de72f63"><span class="cl-2de575f1">1</span><span class="cl-2de575f0">n / N (%); Mean (SD)</span></p></td></tr><tr style="overflow-wrap:break-word;"><td colspan="6" class="cl-2de7407e"><p class="cl-2de72f63"><span class="cl-2de575f1">2</span><span class="cl-2de575f0">Fisher's exact test; One-way analysis of means (not assuming equal variances)</span></p></td></tr></tfoot></table></div>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-tbl" id="tbl-population_itt-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1: Characterstics of study population
+</figcaption>
+</figure>
+</div></div>
+</div></div>
+<div class="cell-container"><div class="cell-decorator"><pre>In [6]:</pre></div><div class="cell">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co">#create datasets for pairwise comparisons of first-pass success</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>dataset_fps <span class="ot">&lt;-</span> <span class="fu">read_rds</span>(<span class="st">"../data/data_clean_itt.rds"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">fps_by_2nd_attempt =</span> <span class="fu">case_when</span>(<span class="fu">is.na</span>(rando_result) <span class="sc">~</span> <span class="cn">NA</span>,</span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>                                        <span class="fu">is.na</span>(device_2nd_itt) <span class="sc">~</span> <span class="fu">as_factor</span>(<span class="st">"yes"</span>),</span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a>                                        <span class="sc">!</span><span class="fu">is.na</span>(device_2nd_itt) <span class="sc">~</span> <span class="fu">as_factor</span>(<span class="st">"no"</span>))) <span class="sc">|&gt;</span></span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">rando_CL_VLM =</span> <span class="fu">case_when</span>(rando_result <span class="sc">==</span> <span class="st">"CL"</span> <span class="sc">~</span> <span class="fu">as_factor</span>(<span class="st">"CL"</span>),</span>
+<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a>                                  rando_result <span class="sc">==</span> <span class="st">"VLM"</span> <span class="sc">~</span> <span class="fu">as_factor</span>(<span class="st">"VLM"</span>),</span>
+<span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a>                                  <span class="cn">TRUE</span> <span class="sc">~</span> <span class="fu">as_factor</span>(<span class="st">"rest"</span>))) <span class="sc">|&gt;</span></span>
+<span id="cb13-12"><a href="#cb13-12" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb13-13"><a href="#cb13-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">rando_CL_VLH =</span> <span class="fu">case_when</span>(rando_result <span class="sc">==</span> <span class="st">"CL"</span> <span class="sc">~</span> <span class="fu">as_factor</span>(<span class="st">"CL"</span>),</span>
+<span id="cb13-14"><a href="#cb13-14" aria-hidden="true" tabindex="-1"></a>                                  rando_result <span class="sc">==</span> <span class="st">"VLH"</span> <span class="sc">~</span> <span class="fu">as_factor</span>(<span class="st">"VLH"</span>),</span>
+<span id="cb13-15"><a href="#cb13-15" aria-hidden="true" tabindex="-1"></a>                                  <span class="cn">TRUE</span> <span class="sc">~</span> <span class="fu">as_factor</span>(<span class="st">"rest"</span>))) <span class="sc">|&gt;</span></span>
+<span id="cb13-16"><a href="#cb13-16" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb13-17"><a href="#cb13-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(rando_result, fps_by_2nd_attempt, rando_CL_VLM, rando_CL_VLH) <span class="sc">|&gt;</span></span>
+<span id="cb13-18"><a href="#cb13-18" aria-hidden="true" tabindex="-1"></a> </span>
+<span id="cb13-19"><a href="#cb13-19" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb13-20"><a href="#cb13-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">rando_CL_VLM =</span> <span class="fu">fct_drop</span>(rando_CL_VLM),</span>
+<span id="cb13-21"><a href="#cb13-21" aria-hidden="true" tabindex="-1"></a>         <span class="at">rando_CL_VLH =</span> <span class="fu">fct_drop</span>(rando_CL_VLH))</span>
+<span id="cb13-22"><a href="#cb13-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-23"><a href="#cb13-23" aria-hidden="true" tabindex="-1"></a><span class="co">#create separate dataset for VLM</span></span>
+<span id="cb13-24"><a href="#cb13-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-25"><a href="#cb13-25" aria-hidden="true" tabindex="-1"></a>dataset_fps_VLM <span class="ot">&lt;-</span> dataset_fps <span class="sc">|&gt;</span></span>
+<span id="cb13-26"><a href="#cb13-26" aria-hidden="true" tabindex="-1"></a>   dplyr<span class="sc">::</span><span class="fu">filter</span>(rando_CL_VLM <span class="sc">!=</span> <span class="st">"rest"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb13-27"><a href="#cb13-27" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">rando_CL_VLM =</span> <span class="fu">fct_drop</span>(rando_CL_VLM))</span>
+<span id="cb13-28"><a href="#cb13-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-29"><a href="#cb13-29" aria-hidden="true" tabindex="-1"></a><span class="co"># create contingency rable for VLM vs. CL</span></span>
+<span id="cb13-30"><a href="#cb13-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-31"><a href="#cb13-31" aria-hidden="true" tabindex="-1"></a>contingency_table_VLM <span class="ot">&lt;-</span> <span class="fu">table</span>(dataset_fps_VLM<span class="sc">$</span>rando_CL_VLM, dataset_fps_VLM<span class="sc">$</span>fps_by_2nd_attempt)</span>
+<span id="cb13-32"><a href="#cb13-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-33"><a href="#cb13-33" aria-hidden="true" tabindex="-1"></a><span class="co"># perform one-sided z test for non-inferiority -&gt; prop_test without correction</span></span>
+<span id="cb13-34"><a href="#cb13-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-35"><a href="#cb13-35" aria-hidden="true" tabindex="-1"></a>z_test_result_VLM <span class="ot">&lt;-</span> <span class="fu">prop_test</span>(contingency_table_VLM, </span>
+<span id="cb13-36"><a href="#cb13-36" aria-hidden="true" tabindex="-1"></a>                           <span class="at">alternative =</span> <span class="st">"less"</span>, </span>
+<span id="cb13-37"><a href="#cb13-37" aria-hidden="true" tabindex="-1"></a>                          <span class="at">correct =</span> <span class="cn">FALSE</span>,</span>
+<span id="cb13-38"><a href="#cb13-38" aria-hidden="true" tabindex="-1"></a>                          <span class="at">detailed =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb13-39"><a href="#cb13-39" aria-hidden="true" tabindex="-1"></a>                          <span class="at">conf.level =</span> <span class="fl">0.975</span>)</span>
+<span id="cb13-40"><a href="#cb13-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-41"><a href="#cb13-41" aria-hidden="true" tabindex="-1"></a><span class="co">#create separate dataset for VLH</span></span>
+<span id="cb13-42"><a href="#cb13-42" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-43"><a href="#cb13-43" aria-hidden="true" tabindex="-1"></a>dataset_fps_VLH <span class="ot">&lt;-</span> dataset_fps <span class="sc">|&gt;</span></span>
+<span id="cb13-44"><a href="#cb13-44" aria-hidden="true" tabindex="-1"></a>   <span class="fu">filter</span>(rando_CL_VLH <span class="sc">!=</span> <span class="st">"rest"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb13-45"><a href="#cb13-45" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">rando_CL_VLH =</span> <span class="fu">fct_drop</span>(rando_CL_VLH))</span>
+<span id="cb13-46"><a href="#cb13-46" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-47"><a href="#cb13-47" aria-hidden="true" tabindex="-1"></a><span class="co"># create contingency rable for VLH vs. CL</span></span>
+<span id="cb13-48"><a href="#cb13-48" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-49"><a href="#cb13-49" aria-hidden="true" tabindex="-1"></a>contingency_table_VLH <span class="ot">&lt;-</span> <span class="fu">table</span>(dataset_fps_VLH<span class="sc">$</span>rando_CL_VLH, dataset_fps_VLH<span class="sc">$</span>fps_by_2nd_attempt)</span>
+<span id="cb13-50"><a href="#cb13-50" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-51"><a href="#cb13-51" aria-hidden="true" tabindex="-1"></a><span class="co"># perform one-sided z test for non-inferiority -&gt; prop_test without correction</span></span>
+<span id="cb13-52"><a href="#cb13-52" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-53"><a href="#cb13-53" aria-hidden="true" tabindex="-1"></a>z_test_result_VLH <span class="ot">&lt;-</span> <span class="fu">prop_test</span>(contingency_table_VLH, </span>
+<span id="cb13-54"><a href="#cb13-54" aria-hidden="true" tabindex="-1"></a>                           <span class="at">alternative =</span> <span class="st">"less"</span>, </span>
+<span id="cb13-55"><a href="#cb13-55" aria-hidden="true" tabindex="-1"></a>                          <span class="at">correct =</span> <span class="cn">FALSE</span>,</span>
+<span id="cb13-56"><a href="#cb13-56" aria-hidden="true" tabindex="-1"></a>                          <span class="at">detailed =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb13-57"><a href="#cb13-57" aria-hidden="true" tabindex="-1"></a>                          <span class="at">conf.level =</span> <span class="fl">0.975</span>)</span>
+<span id="cb13-58"><a href="#cb13-58" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-59"><a href="#cb13-59" aria-hidden="true" tabindex="-1"></a><span class="co"># perform two-sided z test for superiority</span></span>
+<span id="cb13-60"><a href="#cb13-60" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-61"><a href="#cb13-61" aria-hidden="true" tabindex="-1"></a>z_test_result_VLM_sup <span class="ot">&lt;-</span> <span class="fu">prop_test</span>(contingency_table_VLM, </span>
+<span id="cb13-62"><a href="#cb13-62" aria-hidden="true" tabindex="-1"></a>                           <span class="at">alternative =</span> <span class="st">"two.sided"</span>, </span>
+<span id="cb13-63"><a href="#cb13-63" aria-hidden="true" tabindex="-1"></a>                          <span class="at">correct =</span> <span class="cn">FALSE</span>,</span>
+<span id="cb13-64"><a href="#cb13-64" aria-hidden="true" tabindex="-1"></a>                          <span class="at">detailed =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb13-65"><a href="#cb13-65" aria-hidden="true" tabindex="-1"></a>                          <span class="at">conf.level =</span> <span class="fl">0.95</span>)</span>
+<span id="cb13-66"><a href="#cb13-66" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-67"><a href="#cb13-67" aria-hidden="true" tabindex="-1"></a>z_test_result_VLH_sup <span class="ot">&lt;-</span> <span class="fu">prop_test</span>(contingency_table_VLH, </span>
+<span id="cb13-68"><a href="#cb13-68" aria-hidden="true" tabindex="-1"></a>                           <span class="at">alternative =</span> <span class="st">"two.sided"</span>, </span>
+<span id="cb13-69"><a href="#cb13-69" aria-hidden="true" tabindex="-1"></a>                          <span class="at">correct =</span> <span class="cn">FALSE</span>,</span>
+<span id="cb13-70"><a href="#cb13-70" aria-hidden="true" tabindex="-1"></a>                          <span class="at">detailed =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb13-71"><a href="#cb13-71" aria-hidden="true" tabindex="-1"></a>                          <span class="at">conf.level =</span> <span class="fl">0.95</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div></div>
+</section>
+<section id="primary-outcome" class="level2">
+<h2 class="anchored" data-anchor-id="primary-outcome">Primary Outcome</h2>
+<div class="cell-container"><div class="cell-decorator"><pre>In [7]:</pre></div><div class="cell">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">load</span>(<span class="st">"../analysis/analysis_output_objects.RData"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div></div>
+<p>In accordance with the statistical analysis plan, evaluation of the primary outcome was a hierarchical process. In a first step, both video laryngoscopy modalities (VLM and VLH) were non-inferior compared to the control group (one-sided z test; VLM vs.&nbsp;CL: 97.5% confidence interval = 0.03-1.00; VLH vs.&nbsp;CL: 97.5% CI = 0.08-1.00). It was then permissible to test for superiority by performing two-sided z tests. VLM was significantly more effective in facilitating first-pass intubation success than the control (z = 11.10, p = 0.00086). The same was true for VLH (z = 37.23, p = 1.1e-09; s. <a href="#fig-fps" class="quarto-xref">Figure&nbsp;1</a>).</p>
+<div id="fig-fps" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-fps-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="fig-fps.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Figure&nbsp;1: first-pass success rates of endotracheal intubations performed with different laryngsocopy devices."><img src="fig-fps.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:50.0%"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-fps-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: first-pass success rates of endotracheal intubations performed with different laryngsocopy devices.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="secondary-outcomes" class="level2">
+<h2 class="anchored" data-anchor-id="secondary-outcomes">Secondary Outcomes</h2>
+<p>We recorded a plethora of secondary outcomes, a comprehensive selection of which is detailed in <a href="#tbl-secondary_outcomes" class="quarto-xref">Table&nbsp;2</a>. Video laryngoscopy led to significantly faster glottic visualization, while ensuring equally short times to positive kapnography (i.e.&nbsp;intubation success) in the overall study cohort. Moreover, video laryngoscopy was associated with decreased necessity for intermittent ventilation or switch of anesthesia provider. Subjective ease of intubation as rated by the anesthesia providers after each intervention was in turn higher with video laryngoscopy.</p>
+<div class="cell-container"><div class="cell-decorator"><pre>In [8]:</pre></div><div class="cell">
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">read_rds</span>(<span class="st">"../data/data_clean_itt.rds"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(time_to_gw, time_to_pos_kapno, regurgitation, bronchoscopy, dental_injury, blade_blood, lip_injury, intermitt_vent, switch_anasthetist, desat_90, ease_of_intubation, rando_result) <span class="sc">|&gt;</span></span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tbl_summary</span>(</span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">by =</span> rando_result,</span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">statistic =</span> <span class="fu">list</span>(</span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a>      <span class="fu">all_continuous</span>() <span class="sc">~</span> <span class="st">"{mean} ({sd})"</span>,</span>
+<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a>      <span class="fu">all_categorical</span>() <span class="sc">~</span> <span class="st">"{n} / {N} ({p}%)"</span></span>
+<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a>    ),</span>
+<span id="cb15-9"><a href="#cb15-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">digits =</span> <span class="fu">all_continuous</span>() <span class="sc">~</span> <span class="dv">1</span>,</span>
+<span id="cb15-10"><a href="#cb15-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">label =</span> <span class="fu">list</span>(time_to_gw <span class="sc">~</span> <span class="st">"time to glottic view"</span>, time_to_pos_kapno <span class="sc">~</span> <span class="st">"time to first positive kapnography"</span>, regurgitation <span class="sc">~</span> <span class="st">"no. of regurgitations recorded"</span>, bronchoscopy <span class="sc">~</span> <span class="st">"no. of bronchoscopies needed"</span>, dental_injury <span class="sc">~</span> <span class="st">"dental clicks / injuries"</span>, blade_blood <span class="sc">~</span> <span class="st">"blood on laryngsocopy blade"</span>, lip_injury <span class="sc">~</span> <span class="st">"bruised / swollen lip"</span>, intermitt_vent <span class="sc">~</span> <span class="st">"intermittent ventilation neccessary"</span>, switch_anasthetist <span class="sc">~</span> <span class="st">"switch of anaesthesia provider necessary"</span>, desat_90 <span class="sc">~</span> <span class="st">"desaturation below 90%"</span>, ease_of_intubation <span class="sc">~</span> <span class="st">"ease of intuabtion"</span>),</span>
+<span id="cb15-11"><a href="#cb15-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">missing  =</span> <span class="st">"no"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb15-12"><a href="#cb15-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">add_n</span>() <span class="sc">|&gt;</span></span>
+<span id="cb15-13"><a href="#cb15-13" aria-hidden="true" tabindex="-1"></a>  <span class="co">#add_p() |&gt;</span></span>
+<span id="cb15-14"><a href="#cb15-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">add_p</span>(<span class="fu">list</span>(<span class="fu">all_continuous</span>() <span class="sc">~</span> <span class="st">"oneway.test"</span>, <span class="fu">all_categorical</span>() <span class="sc">~</span> <span class="st">"fisher.test"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb15-15"><a href="#cb15-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">as_flex_table</span>() <span class="sc">|&gt;</span></span>
+<span id="cb15-16"><a href="#cb15-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set_table_properties</span>(<span class="at">opts_pdf =</span> <span class="fu">list</span>(<span class="at">float =</span> <span class="st">"float"</span>), <span class="at">layout =</span> <span class="st">"autofit"</span>, <span class="at">width =</span> <span class="fl">0.8</span>) <span class="sc">|&gt;</span></span>
+<span id="cb15-17"><a href="#cb15-17" aria-hidden="true" tabindex="-1"></a>  flextable<span class="sc">::</span><span class="fu">font</span>(<span class="at">fontname =</span> <span class="st">"Times New Roman"</span>, <span class="at">part =</span> <span class="st">"all"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb15-18"><a href="#cb15-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">fontsize</span>(<span class="at">size =</span> <span class="dv">10</span>, <span class="at">part =</span> <span class="st">"all"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>323 missing rows in the "rando_result" column have been removed.</code></pre>
+</div>
+<div class="cell-container"><div class="cell-decorator"><pre>In [9]:</pre></div><div id="tbl-secondary_outcomes" class="cell quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl quarto-uncaptioned" id="tbl-secondary_outcomes-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;2
+</figcaption>
+<div aria-describedby="tbl-secondary_outcomes-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output-display">
+<div class="tabwid"><style>.cl-2eb61e08{table-layout:auto;width:80%;}.cl-2eb2f660{font-family:'Times New Roman';font-size:10pt;font-weight:bold;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-2eb2f66a{font-family:'Times New Roman';font-size:10pt;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-2eb2f66b{font-family:'Times New Roman';font-size:6pt;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;position: relative;bottom:3pt;}.cl-2eb431c4{margin:0;text-align:left;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:2pt;padding-top:2pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-2eb431c5{margin:0;text-align:center;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:2pt;padding-top:2pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-2eb431c6{margin:0;text-align:left;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-2eb431ce{margin:0;text-align:center;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-2eb431cf{margin:0;text-align:left;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:15pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-2eb431d8{margin:0;text-align:left;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-2eb44056{background-color:transparent;vertical-align: middle;border-bottom: 1pt solid rgba(0, 0, 0, 1.00);border-top: 1pt solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2eb44060{background-color:transparent;vertical-align: middle;border-bottom: 1pt solid rgba(0, 0, 0, 1.00);border-top: 1pt solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2eb44061{background-color:transparent;vertical-align: middle;border-bottom: 1pt solid rgba(0, 0, 0, 1.00);border-top: 1pt solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2eb44062{background-color:transparent;vertical-align: middle;border-bottom: 1pt solid rgba(0, 0, 0, 1.00);border-top: 1pt solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2eb4406a{background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2eb4406b{background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2eb4406c{background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2eb4406d{background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2eb44074{background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2eb44075{background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2eb44076{background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2eb4407e{background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2eb4407f{background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2eb44080{background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2eb44081{background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2eb44082{background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2eb44088{background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2eb44089{background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2eb4408a{background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2eb44092{background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2eb44093{background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2eb4409c{background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2eb4409d{background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2eb4409e{background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2eb440a6{background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2eb440c4{background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2eb440ce{background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2eb440cf{background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2eb440d0{background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2eb440d8{background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2eb440d9{background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2eb440da{background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2eb440e2{background-color:transparent;vertical-align: top;border-bottom: 1pt solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2eb440e3{background-color:transparent;vertical-align: top;border-bottom: 1pt solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2eb440e4{background-color:transparent;vertical-align: top;border-bottom: 1pt solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2eb440e5{background-color:transparent;vertical-align: top;border-bottom: 1pt solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2eb440ec{background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(255, 255, 255, 0.00);border-top: 0 solid rgba(255, 255, 255, 0.00);border-left: 0 solid rgba(255, 255, 255, 0.00);border-right: 0 solid rgba(255, 255, 255, 0.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2eb440ed{background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(255, 255, 255, 0.00);border-top: 0 solid rgba(255, 255, 255, 0.00);border-left: 0 solid rgba(255, 255, 255, 0.00);border-right: 0 solid rgba(255, 255, 255, 0.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2eb440ee{background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(255, 255, 255, 0.00);border-top: 0 solid rgba(255, 255, 255, 0.00);border-left: 0 solid rgba(255, 255, 255, 0.00);border-right: 0 solid rgba(255, 255, 255, 0.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-2eb440ef{background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(255, 255, 255, 0.00);border-top: 0 solid rgba(255, 255, 255, 0.00);border-left: 0 solid rgba(255, 255, 255, 0.00);border-right: 0 solid rgba(255, 255, 255, 0.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}</style><table data-quarto-disable-processing="true" class="cl-2eb61e08"><thead><tr style="overflow-wrap:break-word;"><th class="cl-2eb44056"><p class="cl-2eb431c4"><span class="cl-2eb2f660">Characteristic</span></p></th><th class="cl-2eb44060"><p class="cl-2eb431c5"><span class="cl-2eb2f660">N</span></p></th><th class="cl-2eb44061"><p class="cl-2eb431c5"><span class="cl-2eb2f660">CL</span><span class="cl-2eb2f66a">  </span><br><span class="cl-2eb2f66a">N = 848</span><span class="cl-2eb2f66b">1</span></p></th><th class="cl-2eb44061"><p class="cl-2eb431c5"><span class="cl-2eb2f660">VLM</span><span class="cl-2eb2f66a">  </span><br><span class="cl-2eb2f66a">N = 841</span><span class="cl-2eb2f66b">1</span></p></th><th class="cl-2eb44061"><p class="cl-2eb431c5"><span class="cl-2eb2f660">VLH</span><span class="cl-2eb2f66a">  </span><br><span class="cl-2eb2f66a">N = 843</span><span class="cl-2eb2f66b">1</span></p></th><th class="cl-2eb44062"><p class="cl-2eb431c5"><span class="cl-2eb2f660">p-value</span><span class="cl-2eb2f66b">2</span></p></th></tr></thead><tbody><tr style="overflow-wrap:break-word;"><td class="cl-2eb4406a"><p class="cl-2eb431c6"><span class="cl-2eb2f66a">time to glottic view</span></p></td><td class="cl-2eb4406b"><p class="cl-2eb431ce"><span class="cl-2eb2f66a">2,363</span></p></td><td class="cl-2eb4406c"><p class="cl-2eb431ce"><span class="cl-2eb2f66a">20.4 secs (41.3)</span></p></td><td class="cl-2eb4406c"><p class="cl-2eb431ce"><span class="cl-2eb2f66a">17.6 secs (42.0)</span></p></td><td class="cl-2eb4406c"><p class="cl-2eb431ce"><span class="cl-2eb2f66a">14.2 secs (36.6)</span></p></td><td class="cl-2eb4406d"><p class="cl-2eb431ce"><span class="cl-2eb2f66a">0.007</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-2eb44074"><p class="cl-2eb431c6"><span class="cl-2eb2f66a">time to first positive kapnography</span></p></td><td class="cl-2eb44075"><p class="cl-2eb431ce"><span class="cl-2eb2f66a">2,355</span></p></td><td class="cl-2eb44076"><p class="cl-2eb431ce"><span class="cl-2eb2f66a">73.7 secs (72.0)</span></p></td><td class="cl-2eb44076"><p class="cl-2eb431ce"><span class="cl-2eb2f66a">71.7 secs (64.7)</span></p></td><td class="cl-2eb44076"><p class="cl-2eb431ce"><span class="cl-2eb2f66a">72.4 secs (59.2)</span></p></td><td class="cl-2eb4407e"><p class="cl-2eb431ce"><span class="cl-2eb2f66a">0.8</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-2eb44074"><p class="cl-2eb431c6"><span class="cl-2eb2f66a">no. of regurgitations recorded</span></p></td><td class="cl-2eb44075"><p class="cl-2eb431ce"><span class="cl-2eb2f66a">2,389</span></p></td><td class="cl-2eb44076"><p class="cl-2eb431ce"><span class="cl-2eb2f66a">3 / 786 (0.4%)</span></p></td><td class="cl-2eb44076"><p class="cl-2eb431ce"><span class="cl-2eb2f66a">3 / 803 (0.4%)</span></p></td><td class="cl-2eb44076"><p class="cl-2eb431ce"><span class="cl-2eb2f66a">0 / 800 (0%)</span></p></td><td class="cl-2eb4407e"><p class="cl-2eb431ce"><span class="cl-2eb2f66a">0.2</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-2eb4407f"><p class="cl-2eb431c6"><span class="cl-2eb2f66a">no. of bronchoscopies needed</span></p></td><td class="cl-2eb44080"><p class="cl-2eb431ce"><span class="cl-2eb2f66a">2,391</span></p></td><td class="cl-2eb44081"><p class="cl-2eb431ce"><span class="cl-2eb2f66a">0 / 788 (0%)</span></p></td><td class="cl-2eb44081"><p class="cl-2eb431ce"><span class="cl-2eb2f66a">0 / 803 (0%)</span></p></td><td class="cl-2eb44081"><p class="cl-2eb431ce"><span class="cl-2eb2f66a">1 / 800 (0.1%)</span></p></td><td class="cl-2eb44082"><p class="cl-2eb431ce"><span class="cl-2eb2f66a">0.7</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-2eb44088"><p class="cl-2eb431c6"><span class="cl-2eb2f66a">dental clicks / injuries</span></p></td><td class="cl-2eb44089"><p class="cl-2eb431ce"><span class="cl-2eb2f66a">2,389</span></p></td><td class="cl-2eb4408a"><p class="cl-2eb431ce"><span class="cl-2eb2f66a">35 / 788 (4.4%)</span></p></td><td class="cl-2eb4408a"><p class="cl-2eb431ce"><span class="cl-2eb2f66a">37 / 803 (4.6%)</span></p></td><td class="cl-2eb4408a"><p class="cl-2eb431ce"><span class="cl-2eb2f66a">51 / 798 (6.4%)</span></p></td><td class="cl-2eb44092"><p class="cl-2eb431ce"><span class="cl-2eb2f66a">0.2</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-2eb44093"><p class="cl-2eb431c6"><span class="cl-2eb2f66a">blood on laryngsocopy blade</span></p></td><td class="cl-2eb4409c"><p class="cl-2eb431ce"><span class="cl-2eb2f66a">2,384</span></p></td><td class="cl-2eb4409d"><p class="cl-2eb431ce"><span class="cl-2eb2f66a">35 / 786 (4.5%)</span></p></td><td class="cl-2eb4409d"><p class="cl-2eb431ce"><span class="cl-2eb2f66a">32 / 801 (4.0%)</span></p></td><td class="cl-2eb4409d"><p class="cl-2eb431ce"><span class="cl-2eb2f66a">23 / 797 (2.9%)</span></p></td><td class="cl-2eb4409e"><p class="cl-2eb431ce"><span class="cl-2eb2f66a">0.2</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-2eb44088"><p class="cl-2eb431c6"><span class="cl-2eb2f66a">bruised / swollen lip</span></p></td><td class="cl-2eb44089"><p class="cl-2eb431ce"><span class="cl-2eb2f66a">2,380</span></p></td><td class="cl-2eb4408a"><p class="cl-2eb431ce"><span class="cl-2eb2f66a">20 / 784 (2.6%)</span></p></td><td class="cl-2eb4408a"><p class="cl-2eb431ce"><span class="cl-2eb2f66a">19 / 800 (2.4%)</span></p></td><td class="cl-2eb4408a"><p class="cl-2eb431ce"><span class="cl-2eb2f66a">14 / 796 (1.8%)</span></p></td><td class="cl-2eb44092"><p class="cl-2eb431ce"><span class="cl-2eb2f66a">0.5</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-2eb440a6"><p class="cl-2eb431c6"><span class="cl-2eb2f66a">intermittent ventilation neccessary</span></p></td><td class="cl-2eb440c4"><p class="cl-2eb431ce"><span class="cl-2eb2f66a">2,381</span></p></td><td class="cl-2eb440ce"><p class="cl-2eb431ce"><span class="cl-2eb2f66a"></span></p></td><td class="cl-2eb440ce"><p class="cl-2eb431ce"><span class="cl-2eb2f66a"></span></p></td><td class="cl-2eb440ce"><p class="cl-2eb431ce"><span class="cl-2eb2f66a"></span></p></td><td class="cl-2eb440cf"><p class="cl-2eb431ce"><span class="cl-2eb2f66a">&lt;0.001</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-2eb44088"><p class="cl-2eb431cf"><span class="cl-2eb2f66a">no</span></p></td><td class="cl-2eb44089"><p class="cl-2eb431ce"><span class="cl-2eb2f66a"></span></p></td><td class="cl-2eb4408a"><p class="cl-2eb431ce"><span class="cl-2eb2f66a">691 / 784 (88%)</span></p></td><td class="cl-2eb4408a"><p class="cl-2eb431ce"><span class="cl-2eb2f66a">765 / 800 (96%)</span></p></td><td class="cl-2eb4408a"><p class="cl-2eb431ce"><span class="cl-2eb2f66a">764 / 797 (96%)</span></p></td><td class="cl-2eb44092"><p class="cl-2eb431ce"><span class="cl-2eb2f66a"></span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-2eb44088"><p class="cl-2eb431cf"><span class="cl-2eb2f66a">mask</span></p></td><td class="cl-2eb44089"><p class="cl-2eb431ce"><span class="cl-2eb2f66a"></span></p></td><td class="cl-2eb4408a"><p class="cl-2eb431ce"><span class="cl-2eb2f66a">92 / 784 (12%)</span></p></td><td class="cl-2eb4408a"><p class="cl-2eb431ce"><span class="cl-2eb2f66a">35 / 800 (4.4%)</span></p></td><td class="cl-2eb4408a"><p class="cl-2eb431ce"><span class="cl-2eb2f66a">33 / 797 (4.1%)</span></p></td><td class="cl-2eb44092"><p class="cl-2eb431ce"><span class="cl-2eb2f66a"></span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-2eb44093"><p class="cl-2eb431cf"><span class="cl-2eb2f66a">supraglottic device</span></p></td><td class="cl-2eb4409c"><p class="cl-2eb431ce"><span class="cl-2eb2f66a"></span></p></td><td class="cl-2eb4409d"><p class="cl-2eb431ce"><span class="cl-2eb2f66a">1 / 784 (0.1%)</span></p></td><td class="cl-2eb4409d"><p class="cl-2eb431ce"><span class="cl-2eb2f66a">0 / 800 (0%)</span></p></td><td class="cl-2eb4409d"><p class="cl-2eb431ce"><span class="cl-2eb2f66a">0 / 797 (0%)</span></p></td><td class="cl-2eb4409e"><p class="cl-2eb431ce"><span class="cl-2eb2f66a"></span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-2eb440d0"><p class="cl-2eb431c6"><span class="cl-2eb2f66a">switch of anaesthesia provider necessary</span></p></td><td class="cl-2eb440d8"><p class="cl-2eb431ce"><span class="cl-2eb2f66a">2,391</span></p></td><td class="cl-2eb440d9"><p class="cl-2eb431ce"><span class="cl-2eb2f66a">37 / 788 (4.7%)</span></p></td><td class="cl-2eb440d9"><p class="cl-2eb431ce"><span class="cl-2eb2f66a">16 / 803 (2.0%)</span></p></td><td class="cl-2eb440d9"><p class="cl-2eb431ce"><span class="cl-2eb2f66a">19 / 800 (2.4%)</span></p></td><td class="cl-2eb440da"><p class="cl-2eb431ce"><span class="cl-2eb2f66a">0.004</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-2eb44088"><p class="cl-2eb431c6"><span class="cl-2eb2f66a">desaturation below 90%</span></p></td><td class="cl-2eb44089"><p class="cl-2eb431ce"><span class="cl-2eb2f66a">2,387</span></p></td><td class="cl-2eb4408a"><p class="cl-2eb431ce"><span class="cl-2eb2f66a">15 / 786 (1.9%)</span></p></td><td class="cl-2eb4408a"><p class="cl-2eb431ce"><span class="cl-2eb2f66a">14 / 801 (1.7%)</span></p></td><td class="cl-2eb4408a"><p class="cl-2eb431ce"><span class="cl-2eb2f66a">13 / 800 (1.6%)</span></p></td><td class="cl-2eb44092"><p class="cl-2eb431ce"><span class="cl-2eb2f66a">&gt;0.9</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-2eb440e2"><p class="cl-2eb431c6"><span class="cl-2eb2f66a">ease of intuabtion</span></p></td><td class="cl-2eb440e3"><p class="cl-2eb431ce"><span class="cl-2eb2f66a">2,341</span></p></td><td class="cl-2eb440e4"><p class="cl-2eb431ce"><span class="cl-2eb2f66a">7.3 (3.0)</span></p></td><td class="cl-2eb440e4"><p class="cl-2eb431ce"><span class="cl-2eb2f66a">8.1 (2.2)</span></p></td><td class="cl-2eb440e4"><p class="cl-2eb431ce"><span class="cl-2eb2f66a">8.3 (2.0)</span></p></td><td class="cl-2eb440e5"><p class="cl-2eb431ce"><span class="cl-2eb2f66a">&lt;0.001</span></p></td></tr></tbody><tfoot><tr style="overflow-wrap:break-word;"><td colspan="6" class="cl-2eb440ec"><p class="cl-2eb431d8"><span class="cl-2eb2f66b">1</span><span class="cl-2eb2f66a">Mean (SD); n / N (%)</span></p></td></tr><tr style="overflow-wrap:break-word;"><td colspan="6" class="cl-2eb440ec"><p class="cl-2eb431d8"><span class="cl-2eb2f66b">2</span><span class="cl-2eb2f66a">One-way analysis of means (not assuming equal variances); Fisher's exact test</span></p></td></tr></tfoot></table></div>
+</div>
+</div>
+</figure>
+</div></div>
+</div></div>
+<p>In such cases where the first attempt at intubation fails, we looked into intervention durations once again. Time to glottic view was prolonged for all three modalities. However, VLH facilitated glottic view considerably faster than VLM or CL (<a href="#fig-gw" class="quarto-xref">Figure&nbsp;2 (a)</a>). Moving further in the intervention, time to positive kapnography, i.e.&nbsp;successful intubation, was significantly shorter for both video laryngoscopy modalities (<a href="#fig-capno" class="quarto-xref">Figure&nbsp;2 (b)</a>),</p>
+<div id="fig-times_after_1st_attempt" class="quarto-layout-panel">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-times_after_1st_attempt-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-times_after_1st_attempt" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div id="fig-gw" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-gw-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="plot_01.png" class="lightbox" data-gallery="fig-times_after_1st_attempt" title="Figure&nbsp;2&nbsp;(a): time to glottic view"><img src="plot_01.png" class="img-fluid figure-img" data-ref-parent="fig-times_after_1st_attempt"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-gw-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(a) time to glottic view
+</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-times_after_1st_attempt" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div id="fig-capno" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-capno-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="plot_02.png" class="lightbox" data-gallery="fig-times_after_1st_attempt" title="Figure&nbsp;2&nbsp;(b): time to positive capnography"><img src="plot_02.png" class="img-fluid figure-img" data-ref-parent="fig-times_after_1st_attempt"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-capno-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(b) time to positive capnography
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-times_after_1st_attempt-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: Intervention metrics in cases where first attempt failed
+</figcaption>
+</figure>
+</div>
+</section>
+</section>
+<section id="discussion" class="level1">
+<h1>Discussion</h1>
+<p>To our knowledge, we present here the results of the largest multicenter randomized-controlled trial on perioperative laryngoscopy for endotracheal intubation. Our findings show that the use of a video lanryngoscope for routine endotracheal intubation is superior in terms of first-pass success. This is consistent with a meta-analysis from 2022, where both Macintosh-like and hyperangulated blades seemed to be associated with higher first-pass success rates<span class="citation" data-cites="Hansel.2022"><sup><a href="#ref-Hansel.2022" role="doc-biblioref">3</a></sup></span> (RR for successful first attempt Macintosh-like:1.05, 95% CI 1.02 to 1.09; hyperangulated: 1.03, 95% CI 1.00 to 1.05). A randomized-controlled trial by Kriege et al.&nbsp;found Macintosh-like blade video laryngoscopy superior to direct laryngoscopy<span class="citation" data-cites="Kriege.2023"><sup><a href="#ref-Kriege.2023" role="doc-biblioref">4</a></sup></span> (94% vs.&nbsp;82%). Most recently, Ruetzler et al.&nbsp;presented similar findings for hyperangulated laryngoscopy blades in a single-center cluster-randomized trial<span class="citation" data-cites="Ruetzler.2024"><sup><a href="#ref-Ruetzler.2024" role="doc-biblioref">5</a></sup></span> (98.3% vs.&nbsp;92.4%). This is all in general agreement with our findings. Overall, our first-pass success rates are slightly lower. We believe this can be explained with COVALENT’s rather strict definitions as to what constitutes a new intubation attempt.</p>
+<p>We also obtained detailed data on the duration of the interventions <a href="#tbl-secondary_outcomes" class="quarto-xref">Table&nbsp;2</a> . Time to glottic view was significantly shorter for both video laryngoscopy modalities with no clinical relevance. Compared to the findings of Kriege et al., durations are virtually identical when (direct laryngoscopy median: 9s vs.&nbsp;11s, video: 8s vs.&nbsp;10 s). Time to ventilation was longer in our trial compared to Kriege et al., but still very much in the same range (direct median: 48s vs.&nbsp;35 s, video: 54s vs.&nbsp;36 s). Ruetzler et al.&nbsp;did not report on durations due to their mode of data collection. Data from previous studies vary hugely due to extreme heterogeneity, as was also stated by Hansel et al.<span class="citation" data-cites="Hansel.2022"><sup><a href="#ref-Hansel.2022" role="doc-biblioref">3</a></sup></span>.</p>
+<p>With the mentioned substantial studies in mind and our data adressing their remaining shortcomings, we feel confident to make the following statements concerning laryngoscopy for routine endotracheal intubations in the operating room:</p>
+<ul>
+<li><p>Video laryngoscopy is superior to conventional direct laryngoscopy using either a Macintosh-like or hyperangulated blade in terms of first-pass success rates (s. <a href="#fig-fps" class="quarto-xref">Figure&nbsp;1</a>).</p></li>
+<li><p>In the majority of cases, first-pass success can be facilitated with any of the three types of laryngoscopy. No modality is faster than the other in this case (<a href="#tbl-secondary_outcomes" class="quarto-xref">Table&nbsp;2</a>).</p></li>
+<li><p>In the remaining cases where the first attempt fails, video laryngsocopy with a hyperangulated blade is significantly faster to achieve successful intubation eventually (<a href="#fig-capno" class="quarto-xref">Figure&nbsp;2 (b)</a>).</p></li>
+</ul>
+<p>In conclusion, video laryngoscopy should be considered the new evidence-based standard for routine endotracheal intubations. The use of a hyperangulated blade ensures highest first-pass success rates while minimizing intervention duration even if the first attempt fails.</p>
+</section>
+<section id="references" class="level1">
+<h1>References</h1>
+<div id="refs" class="references csl-bib-body" role="list">
+<div id="ref-Weiser.2016" class="csl-entry" role="listitem">
+<div class="csl-left-margin">1. </div><div class="csl-right-inline">Weiser TG, Haynes AB, Molina G, et al. <a href="https://doi.org/10.2471/blt.15.159293"><span class="nocase">Size and distribution of the global volume of surgery in 2012</span></a>. Bulletin of the World Health Organization 2016;94(3):201–209F. </div>
+</div>
+<div id="ref-Rai.2005" class="csl-entry" role="listitem">
+<div class="csl-left-margin">2. </div><div class="csl-right-inline">Rai MR, Dering A, Verghese C. <a href="https://doi.org/10.1111/j.1365-2044.2004.04013.x"><span class="nocase">The Glidescope® system: a clinical assessment of performance</span></a>. Anaesthesia 2005;60(1):60–4. </div>
+</div>
+<div id="ref-Hansel.2022" class="csl-entry" role="listitem">
+<div class="csl-left-margin">3. </div><div class="csl-right-inline">Hansel J, Rogers AM, Lewis SR, Cook TM, Smith AF. <a href="https://doi.org/10.1002/14651858.cd011136.pub3"><span class="nocase">Videolaryngoscopy versus direct laryngoscopy for adults undergoing tracheal intubation</span></a>. Cochrane Database of Systematic Reviews 2022;2022(4):CD011136. </div>
+</div>
+<div id="ref-Kriege.2023" class="csl-entry" role="listitem">
+<div class="csl-left-margin">4. </div><div class="csl-right-inline">Kriege M, Noppens RR, Turkstra T, et al. <a href="https://doi.org/10.1111/anae.15985"><span class="nocase">A multicentre randomised controlled trial of the McGrath Mac videolaryngoscope versus conventional laryngoscopy</span></a>. Anaesthesia 2023;</div>
+</div>
+<div id="ref-Ruetzler.2024" class="csl-entry" role="listitem">
+<div class="csl-left-margin">5. </div><div class="csl-right-inline">Ruetzler K, Bustamante S, Schmidt MT, et al. <a href="https://doi.org/10.1001/jama.2024.0762"><span class="nocase">Video Laryngoscopy vs Direct Laryngoscopy for Endotracheal Intubation in the Operating Room</span></a>. JAMA 2024;331(15). </div>
+</div>
+<div id="ref-Schmid.2023" class="csl-entry" role="listitem">
+<div class="csl-left-margin">6. </div><div class="csl-right-inline">Schmid B, Eckert D, Meixner A, et al. <a href="https://doi.org/10.1186/s12871-023-02083-3"><span class="nocase">Conventional versus video-assisted laryngoscopy for perioperative endotracheal intubation (COVALENT) - a randomized, controlled multicenter trial</span></a>. BMC Anesthesiology 2023;23(1):128. </div>
+</div>
+<div id="ref-Ballermann.2011" class="csl-entry" role="listitem">
+<div class="csl-left-margin">7. </div><div class="csl-right-inline">Ballermann MA, Shaw NT, Mayes DC, Gibney RN, Westbrook JI. <a href="https://doi.org/10.1186/1472-6947-11-32"><span class="nocase">Validation of the Work Observation Method By Activity Timing (WOMBAT) method of conducting time-motion observations in critical care settings: an observational study</span></a>. BMC Medical Informatics and Decision Making 2011;11(1):32–2. </div>
+</div>
+<div id="ref-Team.2024" class="csl-entry" role="listitem">
+<div class="csl-left-margin">8. </div><div class="csl-right-inline">R Core Team. <span class="nocase">R: A Language and Environment for Statistical Computing</span> [Internet]. Vienna, Austria: R Foundation for Statistical Computing; 2024. Available from: <a href="https://www.R-project.org/">https://www.R-project.org/</a></div>
+</div>
+</div>
+</section>
+     </main>
+<!-- /main column -->  <script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>  </div> <!-- /content -->  <script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script> 
+  
+</body></html>

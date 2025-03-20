@@ -1,0 +1,290 @@
+---
+title: "Conventional vs. Video-Asssisted Larnygoscopy in Perioperative Endotracheal Intubations  (COVALENT): a multi-center randomized, controlled trial"
+bibliography: references.bib
+csl: the-new-england-journal-of-medicine.csl
+
+authors:
+  - name: "Benedikt Schmid"
+    orcid: 0000-0003-3413-0690
+    affiliations: "University Hospital Würzburg, Department of Anaesthesiology, Intensive Care,     Emergency and Pain Medicine, Würzburg, Germany"
+    affiliation-url: https://www.ukw.de/anaesthesie/startseite/
+    roles:
+      - Conceptualization
+      - Investigation
+      - Project administration
+      - Data analysis
+      - Writing – original draft
+    corresponding: true
+  - name: "Linda Grüßer"
+    orcid: 0000-0002-1274-5611
+    affiliations: "Department of Anaesthesiology, RWTH Aachen University Hospital, Germany"
+    roles:
+      - Data collection
+  - name: "Maria Wittmann"
+    orcid:
+    affiliations: "University Hospital Bonn, Department of Anaesthesiology, Bonn, Germany"
+    roles:
+      - Data collection
+  - name: "Robert Werdehausen"
+    orcid:
+    affiliations: "Department of Anaesthesiology and Intensive Care, Medical Faculty, University of Leipzig, Germany"
+    roles:
+      - Data collection
+  - name: "Christopher Neuhaus"
+    orcid: 0000-0001-7262-3723
+    affiliations: "Department of Anesthesiology, University Hospital Heidelberg, Heidelberg, Germany"
+    roles:
+      - Data collection
+  - name: "Peter Paal"
+    orcid: 0000-0002-2939-4782
+    affiliations: "Department of Anaesthesiology and Intensive Care Medicine, St. John of God Hospital, Paracelsus Medical University, Salzburg, Austria"
+    roles:
+      - Data collection
+  - name: "Patrick Meybohm"
+    orcid: 0000-0002-2666-8696
+    affiliations: "University Hospital Würzburg, Department of Anaesthesiology, Intensive Care,     Emergency and Pain Medicine, Würzburg, Germany"
+    roles: 
+      - Conceptualization
+      - Draft Revision
+  - name: "Peter Kranke"
+    orcid: 0000-0001-5324-981X
+    affiliations: "University Hospital Würzburg, Department of Anaesthesiology, Intensive Care,     Emergency and Pain Medicine, Würzburg, Germany"
+  - name: "Gregor Massoth"
+    affiliations: "University Hospital Bonn, Department of Anaesthesiology, Bonn, Germany"
+    roles:
+      - Investigation
+      - Writing – original draft
+---
+
+```{r}
+#| label: packages
+
+library(tidyverse)
+library(gt)
+library(flextable)
+library(gtsummary)
+library(rstatix)
+```
+
+# Introduction
+
+Each year, more than 300 million major surgical procedures have been estimated to take place under some form of anesthesia @Weiser.2016. This implies that at least 100 million endotracheal intubations are performed annually in a peri-operative context. To facilitate successful intubation, the anesthetist uses some form of laryngoscope to be able to safely place the endotracheal tube in its correct position. Ever since video laryngoscopes have been introduced in 2001 @Rai.2005, many studies have been performed to compare these new, camera-guided instruments to the conventional, direct method of laryngoscopy. Regarding the blades used in the procedure, mainly two different geometries have found their way into routine clinical pratice: the classic, Macintosh-like shape already known from direct laryngoscopy and a hyperangulated shape, which is supposed to enable the view onto the glottic plane even in challenging anatomical surroundings. Regardless of the type of laryngoscope, successful intubation at the first attempt, so-called first-pass success, is widely recognized as the outcome most relevant to the patient.
+
+A large number of trials with mostly insufficient statistical power culminated in the most recent version of a Cochrane systematic review and meta-analysis in 2022 @Hansel.2022. Therein, video laryngsocopy tended to enable higher first-pass success rates with either Macintosh-like or hyperangulated blades compared to the conventional approach. However, the certainty of evidence remained low due to large statistical heterogeneity. Since then, mainly two large trials set out to overcome these limitations by including sufficiently high numbers of patients: First, Kriege et al. found video laryngoscopy with Macintosh-like blades to achieve higher first-pass success rates than conventional laryngoscopy in a multicenter randomized-controlled trial @Kriege.2023. Second, Ruetzler et al. presented findings from a large single-center cluster-randomized trial, demonstrating superiority of video laryngoscopy with a hyperangulated blade @Ruetzler.2024. However, neither of the trials incorporated both Macintosh-like and hyperangulated blades. Also, they were limited to only one respective brand and build of video laryngoscopes.
+
+So, even after these comprehensive trials, there remained substantial lack in the generalizability of the evidence. To address this, we implemented a multicenter, randomized-controlled trial incorporating both Macintosh-like and hyperangulated blades with no restrictions on model or brand. Taking all this into account, the COVALENT trial is intended to deliver the final pieces of evidence on which type of larnyngoscopy enables the highest first-pass success rates for routine endotracheal intubations in the operating room: conventional direct, Macintosh-like video or hyperangulated video laryngsocopy?
+
+# Methods
+
+Patients were recruited according to the study protocol published previously @Schmid.2023. In short, patients had to be adults scheduled for elective surgery. Exclusion criteria, namely pregnancy, a history of difficult airway or medical concerns put forth by the anesthesia provider in charge of the intervention. Patients were enrolled after written informed consent and randomized in a 1:1:1 ratio into aone of three arms: conventional laryngoscopy (CL, control group), video laryngoscopy with Macintosh-like blade (VLM), or video laryngoscopy with hyperangulated blade (VLH). Randomization was done in permuted blocks stratified by study site. Randomization merely determined the geometry of the laryngoscope but not the manufacturer, which was determined by local conditions at each study site. However, the brand and build of the used laryngoscopes was recorded in the eCRF.\
+Each endotracheal intubation within the trial was observed and documented on site and in real time by one of several previously trained study observers. Most study outcomes were recorded using the Work Observation Method By Activity Timing (WOMBAT) software (WOMBAT 3.0, 2020 @Ballermann.2011), which allowed for quick and precise capture of outcomes and time stamps. The remainder of parameters was taken from the patients' clinical records.\
+All study data were centrally stored in an electronic case report Form (eCRF; OpenClinica open source software, version 3.16 , Copyright OpenClinica LLC and collaborators, Waltham, MA, USA, www.OpenClinica.com). To decide on non-inferiority of the primary outcome, equal or up to 5% less efficacy of the interventions in first-pass success rates were pre-defined as non-inferior. For tests on superiority, statistical significance was assumed at p\<0.05. All data analysis was performed using R Statistical Software @Team.2024 (v4.4.2).
+
+# Results
+
+## Population
+
+```{r}
+#| label: data_population
+
+data_clean_itt <- read_rds("../data/data_clean_itt.rds") 
+
+n_included_total <- data_clean_itt |>
+  nrow()
+
+n_randomized_total <- data_clean_itt |>
+  filter(!is.na(rando_result)) |>
+  nrow()
+
+date_first_patient_in <- min(data_clean_itt$date_inclusion)
+
+date_last_patient_in <- max(data_clean_itt$date_inclusion)
+
+n_treatment_received <- read_rds("../data/data_clean.rds") |>
+  filter(!is.na(rando_result) & !is.na(intubation_start)) |> nrow()
+
+```
+
+Between `r format(date_first_patient_in, "%d/%m/%y")` and `r format(date_last_patient_in, "%d/%m/%y")`, we included `r n_included_total` and randomized `r n_randomized_total` patients in six anesthesia departments. Out of all randomized patients, `r n_treatment_received` received treatment as per protocol (`r format(round((n_treatment_received/n_randomized_total)*100, 2), nsmall = 2)`%). Characteristics of the study population are shown in @tbl-population_itt.
+
+```{r}
+#| label: data_population_itt
+
+data_descritpive_statistics_itt <- read_rds("../data/data_clean_itt.rds") |>
+  select(sex, age, BMI, surg_specialty, ASA, hist_OSAS, ULBT, mallampati, patil, RSI, spo2_baseline, preoxy80, relaxation_complete, intubation_start, rando_result) |>
+  filter(!is.na(rando_result))
+```
+
+```{r}
+#| label: tbl-population_itt
+#| tbl-cap: Characterstics of study population
+#| tbl-cap-location: bottom
+#| output: true
+data_descritpive_statistics_itt |>
+  select(-intubation_start) |>
+  tbl_summary(
+    by = rando_result,
+    statistic = list(
+      all_continuous() ~ "{mean} ({sd})",
+      all_categorical() ~ "{n} / {N} ({p}%)"
+    ),
+    digits = all_continuous() ~ 1,
+    label = list(sex ~ "gender", surg_specialty ~ "surgical specialty", hist_OSAS ~ "history of OSAS", ULBT ~ "upper lip bite test", patil ~ "thyro-mental distance (cm)", RSI ~ "rapid sequence induction", spo2_baseline ~ "baseline oxygen saturation (%)", preoxy80 ~ "sufficient pre-oxygenation", relaxation_complete ~ "complete muscle relaxation"),
+    missing  = "no") |>
+  add_n() |>
+  add_p(list(all_continuous() ~ "oneway.test", all_categorical() ~ "fisher.test")) |>
+  as_flex_table() |>
+  set_table_properties(opts_pdf = list(float = "float"), layout = "autofit", width = 0.8) |>
+  font(fontname = "Times New Roman", part = "all") |>
+  fontsize(size = 10, part = "all")
+
+```
+
+```{r}
+#| label: dataset_fps
+#create datasets for pairwise comparisons of first-pass success
+
+dataset_fps <- read_rds("../data/data_clean_itt.rds") |>
+  
+  mutate(fps_by_2nd_attempt = case_when(is.na(rando_result) ~ NA,
+                                        is.na(device_2nd_itt) ~ as_factor("yes"),
+                                        !is.na(device_2nd_itt) ~ as_factor("no"))) |>
+  
+  mutate(rando_CL_VLM = case_when(rando_result == "CL" ~ as_factor("CL"),
+                                  rando_result == "VLM" ~ as_factor("VLM"),
+                                  TRUE ~ as_factor("rest"))) |>
+  
+  mutate(rando_CL_VLH = case_when(rando_result == "CL" ~ as_factor("CL"),
+                                  rando_result == "VLH" ~ as_factor("VLH"),
+                                  TRUE ~ as_factor("rest"))) |>
+  
+  select(rando_result, fps_by_2nd_attempt, rando_CL_VLM, rando_CL_VLH) |>
+ 
+  
+  mutate(rando_CL_VLM = fct_drop(rando_CL_VLM),
+         rando_CL_VLH = fct_drop(rando_CL_VLH))
+
+#create separate dataset for VLM
+
+dataset_fps_VLM <- dataset_fps |>
+   dplyr::filter(rando_CL_VLM != "rest") |>
+  mutate(rando_CL_VLM = fct_drop(rando_CL_VLM))
+
+# create contingency rable for VLM vs. CL
+
+contingency_table_VLM <- table(dataset_fps_VLM$rando_CL_VLM, dataset_fps_VLM$fps_by_2nd_attempt)
+
+# perform one-sided z test for non-inferiority -> prop_test without correction
+
+z_test_result_VLM <- prop_test(contingency_table_VLM, 
+                           alternative = "less", 
+                          correct = FALSE,
+                          detailed = TRUE,
+                          conf.level = 0.975)
+
+#create separate dataset for VLH
+
+dataset_fps_VLH <- dataset_fps |>
+   filter(rando_CL_VLH != "rest") |>
+  mutate(rando_CL_VLH = fct_drop(rando_CL_VLH))
+
+# create contingency rable for VLH vs. CL
+
+contingency_table_VLH <- table(dataset_fps_VLH$rando_CL_VLH, dataset_fps_VLH$fps_by_2nd_attempt)
+
+# perform one-sided z test for non-inferiority -> prop_test without correction
+
+z_test_result_VLH <- prop_test(contingency_table_VLH, 
+                           alternative = "less", 
+                          correct = FALSE,
+                          detailed = TRUE,
+                          conf.level = 0.975)
+
+# perform two-sided z test for superiority
+
+z_test_result_VLM_sup <- prop_test(contingency_table_VLM, 
+                           alternative = "two.sided", 
+                          correct = FALSE,
+                          detailed = TRUE,
+                          conf.level = 0.95)
+
+z_test_result_VLH_sup <- prop_test(contingency_table_VLH, 
+                           alternative = "two.sided", 
+                          correct = FALSE,
+                          detailed = TRUE,
+                          conf.level = 0.95)
+
+```
+
+## Primary Outcome
+
+```{r}
+#| label: load_analysis_output
+load("../analysis/analysis_output_objects.RData")
+
+```
+
+In accordance with the statistical analysis plan, evaluation of the primary outcome was a hierarchical process. In a first step, both video laryngoscopy modalities (VLM and VLH) were non-inferior compared to the control group (one-sided z test; VLM vs. CL: 97.5% confidence interval = `r format(round(VLM_noninf_CI.low, 2), nsmall = 2)`-`r format(round(VLM_noninf_CI.high, 2), nsmall = 2)`; VLH vs. CL: 97.5% CI = `r format(round(VLH_noninf_CI.low, 2), nsmall = 2)`-`r format(round(VLH_noninf_CI.high, 2), nsmall = 2)`). It was then permissible to test for superiority by performing two-sided z tests. VLM was significantly more effective in facilitating first-pass intubation success than the control (z = `r format(round(VLM_sup_statistic, 2), nsmall = 2)`, p = `r as.character(signif(VLM_sup_p, digits = 2))`). The same was true for VLH (z = `r format(round(VLH_sup_statistic, 2), nsmall = 2)`, p = `r as.character(signif(VLH_sup_p, digits = 2))`; s. @fig-fps).
+
+![first-pass success rates of endotracheal intubations performed with different laryngsocopy devices.](fig-fps.png){#fig-fps width="50%" fig-align="left"}
+
+## Secondary Outcomes
+
+We recorded a plethora of secondary outcomes, a comprehensive selection of which is detailed in @tbl-secondary_outcomes. Video laryngoscopy led to significantly faster glottic visualization, while ensuring equally short times to positive kapnography (i.e. intubation success) in the overall study cohort. Moreover, video laryngoscopy was associated with decreased necessity for intermittent ventilation or switch of anesthesia provider. Subjective ease of intubation as rated by the anesthesia providers after each intervention was in turn higher with video laryngoscopy.
+
+```{r}
+#| label: tbl-secondary_outcomes
+#| output: true
+
+
+read_rds("../data/data_clean_itt.rds") |>
+  select(time_to_gw, time_to_pos_kapno, regurgitation, bronchoscopy, dental_injury, blade_blood, lip_injury, intermitt_vent, switch_anasthetist, desat_90, ease_of_intubation, rando_result) |>
+  tbl_summary(
+    by = rando_result,
+    statistic = list(
+      all_continuous() ~ "{mean} ({sd})",
+      all_categorical() ~ "{n} / {N} ({p}%)"
+    ),
+    digits = all_continuous() ~ 1,
+    label = list(time_to_gw ~ "time to glottic view", time_to_pos_kapno ~ "time to first positive kapnography", regurgitation ~ "no. of regurgitations recorded", bronchoscopy ~ "no. of bronchoscopies needed", dental_injury ~ "dental clicks / injuries", blade_blood ~ "blood on laryngsocopy blade", lip_injury ~ "bruised / swollen lip", intermitt_vent ~ "intermittent ventilation neccessary", switch_anasthetist ~ "switch of anaesthesia provider necessary", desat_90 ~ "desaturation below 90%", ease_of_intubation ~ "ease of intuabtion"),
+    missing  = "no") |>
+  add_n() |>
+  #add_p() |>
+  add_p(list(all_continuous() ~ "oneway.test", all_categorical() ~ "fisher.test")) |>
+  as_flex_table() |>
+  set_table_properties(opts_pdf = list(float = "float"), layout = "autofit", width = 0.8) |>
+  flextable::font(fontname = "Times New Roman", part = "all") |>
+  fontsize(size = 10, part = "all")
+
+```
+
+In such cases where the first attempt at intubation fails, we looked into intervention durations once again. Time to glottic view was prolonged for all three modalities. However, VLH facilitated glottic view considerably faster than VLM or CL (@fig-gw). Moving further in the intervention, time to positive kapnography, i.e. successful intubation, was significantly shorter for both video laryngoscopy modalities (@fig-capno),
+
+::: {#fig-times_after_1st_attempt layout-ncol="2"}
+![time to glottic view](plot_01.png){#fig-gw}
+
+![time to positive capnography](plot_02.png){#fig-capno}
+
+Intervention metrics in cases where first attempt failed
+:::
+
+# Discussion
+
+To our knowledge, we present here the results of the largest multicenter randomized-controlled trial on perioperative laryngoscopy for endotracheal intubation. Our findings show that the use of a video lanryngoscope for routine endotracheal intubation is superior in terms of first-pass success. This is consistent with a meta-analysis from 2022, where both Macintosh-like and hyperangulated blades seemed to be associated with higher first-pass success rates @Hansel.2022 (RR for successful first attempt Macintosh-like:1.05, 95% CI 1.02 to 1.09; hyperangulated: 1.03, 95% CI 1.00 to 1.05). A randomized-controlled trial by Kriege et al. found Macintosh-like blade video laryngoscopy superior to direct laryngoscopy @Kriege.2023 (94% vs. 82%). Most recently, Ruetzler et al. presented similar findings for hyperangulated laryngoscopy blades in a single-center cluster-randomized trial @Ruetzler.2024 (98.3% vs. 92.4%). This is all in general agreement with our findings. Overall, our first-pass success rates are slightly lower. We believe this can be explained with COVALENT's rather strict definitions as to what constitutes a new intubation attempt.
+
+We also obtained detailed data on the duration of the interventions @tbl-secondary_outcomes . Time to glottic view was significantly shorter for both video laryngoscopy modalities with no clinical relevance. Compared to the findings of Kriege et al., durations are virtually identical when (direct laryngoscopy median: 9s vs. 11s, video: 8s vs. 10 s). Time to ventilation was longer in our trial compared to Kriege et al., but still very much in the same range (direct median: 48s vs. 35 s, video: 54s vs. 36 s). Ruetzler et al. did not report on durations due to their mode of data collection. Data from previous studies vary hugely due to extreme heterogeneity, as was also stated by Hansel et al. @Hansel.2022.
+
+With the mentioned substantial studies in mind and our data adressing their remaining shortcomings, we feel confident to make the following statements concerning laryngoscopy for routine endotracheal intubations in the operating room:
+
+-   Video laryngoscopy is superior to conventional direct laryngoscopy using either a Macintosh-like or hyperangulated blade in terms of first-pass success rates (s. @fig-fps).
+
+-   In the majority of cases, first-pass success can be facilitated with any of the three types of laryngoscopy. No modality is faster than the other in this case (@tbl-secondary_outcomes).
+
+-   In the remaining cases where the first attempt fails, video laryngsocopy with a hyperangulated blade is significantly faster to achieve successful intubation eventually (@fig-capno).
+
+In conclusion, video laryngoscopy should be considered the new evidence-based standard for routine endotracheal intubations. The use of a hyperangulated blade ensures highest first-pass success rates while minimizing intervention duration even if the first attempt fails.
+
+# References
+
+::: {#refs}
+:::
